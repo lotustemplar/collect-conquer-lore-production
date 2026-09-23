@@ -1,6 +1,6 @@
 ﻿import React, { useState } from 'react';
 import { scoreArtworkCandidate } from './card-recommendations.js';
-import { searchIntentCards } from './scryfall.js';
+import { searchIntentCards, searchScryfall } from './scryfall.js';
 import { ArrowLeft, ArrowRight, Check, ChevronDown, FileText, Image, Info, Sparkles, X } from 'lucide-react';
 
 export const workflowSteps = ['choose', 'narration', 'visuals', 'review'];
@@ -51,6 +51,24 @@ function PromptBlock({ title, text }) {
 export function VisualBoardCompact({ run, onAssign, onRemove, onNoCard, onAccept, onBuild, onIndexCard, allCards = [], episodePrompt = '', soundtrack = null, sceneGuidance = [] }) {
   const [remoteResults, setRemoteResults] = useState({});
   const [remoteLoading, setRemoteLoading] = useState({});
+  const [cardSearchTerms, setCardSearchTerms] = useState({});
+  const [cardSearchErrors, setCardSearchErrors] = useState({});
+  const searchSceneCards = async (scene, fallback) => {
+    const query = (cardSearchTerms[scene.id] || fallback || '').trim();
+    if (!query) return;
+    setRemoteLoading(prev => ({ ...prev, [scene.id]: true }));
+    setCardSearchErrors(prev => ({ ...prev, [scene.id]: '' }));
+    try {
+      const results = await searchScryfall(query);
+      setRemoteResults(prev => {
+        const combined = [...results.map(card => ({ ...card, reason: `Scryfall search result for “${query}”. Check the artwork and its period before assigning it.` })), ...(prev[scene.id] || [])];
+        return { ...prev, [scene.id]: combined.filter((card, index, list) => list.findIndex(item => (item.illustration_id || item.connection_id) === (card.illustration_id || card.connection_id)) === index) };
+      });
+      if (!results.length) setCardSearchErrors(prev => ({ ...prev, [scene.id]: `No cards matched “${query}”. Try a character, place, or object from this scene.` }));
+    } catch (error) {
+      setCardSearchErrors(prev => ({ ...prev, [scene.id]: `Card search failed: ${error.message}` }));
+    } finally { setRemoteLoading(prev => ({ ...prev, [scene.id]: false })); }
+  };
   const discoverForBeat = async (scene, beat) => {
     setRemoteLoading(prev => ({ ...prev, [scene.id]: true }));
     try {
@@ -86,11 +104,13 @@ export function VisualBoardCompact({ run, onAssign, onRemove, onNoCard, onAccept
         <div className="scene-compact-head"><div><span className="scene-index">{String(i + 1).padStart(2, '0')}</span><h3>{sceneTitle}</h3><small>{scene.duration}s · {scene.excerpt.trim().split(/\s+/).filter(Boolean).length} words · {readable(scene.location)}</small></div><span className={assignment.primary || assignment.noCard ? 'assigned-dot' : 'unassigned-dot'}>{assignment.primary ? 'Selected' : assignment.noCard ? 'No card' : 'Choose'}</span></div>
         <section className="scene-production-guidance"><div className="scene-brief-top"><div><span>SCENE VISUAL BRIEF</span><p><strong>Event:</strong> {readable(scene.event)} · <strong>Location:</strong> {readable(scene.location)}</p></div>{scene.backgroundImage && <a className="background-preview-link" href={scene.backgroundImage} target="_blank" rel="noreferrer"><img src={scene.backgroundImage} alt={`${scene.name} illustrative reconstruction background`} loading="lazy" /><small>{scene.backgroundLabel || 'Illustrative reconstruction — not canonical artwork'}</small></a>}</div><PromptBlock title="Image / background prompt · illustrative reconstruction" text={guide.backgroundPrompt || scene.backgroundPrompt || production?.aiBackgroundPrompt || `Illustrative reconstruction, not canonical artwork: grounded imagery for ${readable(scene.location)} based on this narrated beat.`} /><div className="scene-prompt-grid"><PromptBlock title="Suggested video effect" text={guide.videoEffect || production?.videoEffect || 'Slow atmospheric drift with a restrained push-in; keep movement subtle beneath narration.'} /><PromptBlock title="Audio / SFX prompt" text={guide.audioPrompt || production?.audioPrompt || production?.audio || `Create restrained ambient sound for ${readable(scene.location)}: low environmental texture tied to ${readable(scene.event)}, with no voices or music competing with narration.`} /><PromptBlock title="Transition suggestion" text={guide.transition || production?.transition || 'Use a slow dissolve at the end of the narration beat; let the final image hold briefly before the next scene.'} /></div></section><details className="scene-story"><summary>Read scene narration and source notes <ChevronDown size={14} /></summary><blockquote>{readable(scene.excerpt)}</blockquote><details className="technical-details scene-sources"><summary>Sources for this scene</summary>{(scene.sourceReferences || []).map((source,index)=><p key={`${source.source_id}-${index}`}>{source.title}, chapter {source.chapter} · {source.confidence} confidence</p>)}</details></details>
         {scene.visualBeats?.length > 0 && <details className="visual-intents"><summary>Visual opportunities · {scene.visualBeats.length}</summary>{scene.visualBeats.map(beat => <div className="visual-beat" key={beat.beat_id}><blockquote>{beat.narration_text}</blockquote><div className="intent-tags">{beat.characters.map(name => <span key={`c-${name}`}>Character: {name}</span>)}{beat.locations.map(name => <span key={`l-${name}`}>Location: {name}</span>)}{beat.visual_priorities.map(name => <span key={`v-${name}`}>{name}</span>)}</div><small>Explicit details come from the narration span. Inferred search terms do not establish canon.</small><button type="button" onClick={() => discoverForBeat(scene, beat)} disabled={remoteLoading[scene.id]}>{remoteLoading[scene.id] ? 'SEARCHING...' : 'FIND CARD ART FOR THIS BEAT'}</button></div>)}</details>}
-        <div className="visual-columns"><div><p className="official-art-links"><strong>Other official visual sources:</strong> <a href={`https://magic.wizards.com/en/search?search=${searchTerm}`} target="_blank" rel="noreferrer">Search Wizards.com</a> <span>Use credited Wizards or commissioned artwork.</span></p>{scene.artworkNote && <p className="quiet-note artwork-note">{scene.artworkNote}</p>}<label>Suggested cards</label>
+        <div className="visual-columns"><div><p className="official-art-links"><strong>Other official visual sources:</strong> <a href={`https://magic.wizards.com/en/search?search=${searchTerm}`} target="_blank" rel="noreferrer">Search Wizards.com</a> <span>Use credited Wizards or commissioned artwork.</span></p>{scene.artworkNote && <p className="quiet-note artwork-note">{scene.artworkNote.replace(/manual search and No card remain available\.?/i, 'Related card art may help, but it is not confirmed for this scene.')}</p>}<label>Suggested cards</label>
+          <form className="scene-card-search" onSubmit={event => { event.preventDefault(); searchSceneCards(scene, scene.location || sceneTitle); }}><input aria-label={`Search cards for ${sceneTitle}`} value={cardSearchTerms[scene.id] ?? ''} onChange={event => setCardSearchTerms(prev => ({ ...prev, [scene.id]: event.target.value }))} placeholder={`Search cards for ${sceneTitle}`} /><button type="submit" disabled={remoteLoading[scene.id]}>{remoteLoading[scene.id] ? 'SEARCHING…' : 'SEARCH CARDS'}</button></form>
           {suggested.length > 0 && <p className="quiet-note">Each suggestion is labeled by evidence. A card association does not prove its art depicts this scene or period.</p>}
           {suggested.map(card => <CardChoice key={card.connection_id} scene={scene} card={card} assignment={assignment} onAssign={onAssign} onRemove={onRemove} onIndexCard={onIndexCard} />)}
           {remoteLoading[scene.id] && <p className="quiet-note">Finding relevant card art...</p>}
-          {!suggested.length && !remoteLoading[scene.id] && <p className="quiet-note">No card suggestions for this scene. You can use its illustrative background or choose No card.</p>}
+          {cardSearchErrors[scene.id] && <p className="quiet-note" role="status">{cardSearchErrors[scene.id]}</p>}
+          {!suggested.length && !remoteLoading[scene.id] && !cardSearchErrors[scene.id] && <p className="quiet-note">No indexed suggestions yet. Search Scryfall for this scene, inspect the artwork, then choose it or use No card.</p>}
         </div><div className="selected-visuals"><label>Selected visuals</label><p>{assignment.primary?.card_name || 'None selected'}</p>{assignment.primary && <button className="remove-selection" onClick={() => onRemove(scene.id, assignment.primary, 'primary')}>REMOVE PRIMARY</button>}{(assignment.supporting || []).map(card => <span key={card.connection_id}>Supporting: {card.card_name} <button className="remove-selection" onClick={() => onRemove(scene.id, card, 'supporting')}>REMOVE</button></span>)}<button className={assignment.noCard ? 'no-card selected' : 'no-card'} onClick={() => onNoCard(scene.id)}>NO CARD</button></div></div>
       </article>;
     })}</div><div className="visual-footer"><span>{assigned} of {run.scenes.length} scenes assigned</span><button className="button primary" disabled={!ready} onClick={onBuild}>CONTINUE TO REVIEW <ArrowRight size={15} /></button></div>
