@@ -13,6 +13,9 @@ test('Episode 2 is a five-scene, source-linked production record with local back
   assert.ok(production.scenes.every(scene => scene.sourceReferences?.length && scene.sourceReferences[0].chapter));
   assert.ok(production.scenes.every(scene => existsSync(`public${scene.backgroundImage}`)));
   assert.equal(production.scenes.some(scene => scene.suggestedCards?.some(card => card.card_name === 'Gix, Yawgmoth Praetor')), false);
+  assert.ok(production.soundtrack.mainTheme.length > 150, 'the visual board has an episode-wide theme prompt');
+  assert.equal(production.soundtrack.sceneCues.length, 5, 'each scene has a soundtrack cue prompt');
+  assert.ok(production.scenes.every(scene => scene.videoEffect && scene.audioPrompt && scene.transition), 'every visual beat includes production direction');
   assert.match(production.scenes[3].suggestedCards[0].reason, /related character artwork only/i);
   assert.match(production.scenes[4].excerpt, /hundreds of the damned behind him/);
   assert.match(production.scenes[4].excerpt, /the condemned were coming up/i);

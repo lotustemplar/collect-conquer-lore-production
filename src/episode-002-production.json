@@ -26,7 +26,10 @@
       ],
       "visualBeats": [],
       "suggestedCards": [],
-      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available."
+      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available.",
+      "videoEffect": "Slow lateral drift along the empty desert road toward Halcyon; let a distant skyship pass subtly across the high background, with no invented character action.",
+      "audioPrompt": "Wind across stone, measured footsteps, and a very distant skyship engine pass; restrained, no voices, fade beneath narration.",
+      "transition": "Dissolve from a quiet establishing view of the road; hold the empty horizon briefly before the gate scene."
     },
     {
       "id": "episode_6635ebde984f5509a6ad8e3dad8c81c7-scene-2",
@@ -49,7 +52,10 @@
       ],
       "visualBeats": [],
       "suggestedCards": [],
-      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available."
+      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available.",
+      "videoEffect": "A gentle push toward the white stone gate and engineered stream; let reflected water light move across the carved architecture, keeping people secondary and unposed.",
+      "audioPrompt": "A small stream crossing stone, soft courtyard air, and faint city ambience; no intelligible voices, keep it quiet under speech.",
+      "transition": "Carry the stream sound across a soft dissolve into the city interior."
     },
     {
       "id": "episode_6635ebde984f5509a6ad8e3dad8c81c7-scene-3",
@@ -72,7 +78,10 @@
       ],
       "visualBeats": [],
       "suggestedCards": [],
-      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available."
+      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available.",
+      "videoEffect": "Tilt downward into the cavern?s depth, with restrained parallax among rough stone, lantern light, and distant fires; avoid horror imagery or invented figures in close view.",
+      "audioPrompt": "Low cavern air, rope and careful footsteps, a lantern mechanism, and distant fire crackle; no screams or voices, keep the human setting grounded.",
+      "transition": "Let the image darken briefly as the descent begins, then reveal the cavern on the next beat."
     },
     {
       "id": "episode_6635ebde984f5509a6ad8e3dad8c81c7-scene-4",
@@ -110,7 +119,10 @@
           "reason": "Yawgmoth is present in this scene. This is related character artwork only; the card?s specific pose and period are not verified as a depiction of this examination."
         }
       ],
-      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available."
+      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available.",
+      "videoEffect": "Slow close movement across an austere infirmary table, instruments, and separate patient spaces; restrained light, no graphic detail and no invented procedure beyond narration.",
+      "audioPrompt": "Quiet metal instrument handling, glass vials, cloth, and a faint powerstone hum that recedes; subdued and clearly below narration.",
+      "transition": "Use a measured dissolve from cavern darkness into the cooler infirmary light."
     },
     {
       "id": "episode_6635ebde984f5509a6ad8e3dad8c81c7-scene-5",
@@ -145,12 +157,42 @@
       ],
       "visualBeats": [],
       "suggestedCards": [],
-      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available."
+      "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available.",
+      "videoEffect": "Tilt upward with the luminous foundation as it rises, then let the frame settle on the city and dimmer spaces below; end on stillness rather than spectacle.",
+      "audioPrompt": "Soft crystalline resonance, a restrained mechanical lift, distant civic ambience, then let the sound thin toward silence; no explosive effects.",
+      "transition": "Hold the rising structure, then fade toward darkness on the final unresolved line to invite the next episode."
     }
   ],
   "source_notes": "The Thran, chapters 2?4. Primary text was reviewed; references are chapter-level because EPUB page numbering varies.",
   "audit_status": "LORE VERIFIED",
   "audit_confidence": "HIGH",
   "audit_claims": [],
-  "summary": "After five years beyond the Thran Empire, Yawgmoth is summoned to Halcyon to treat Glacian. The return brings him into a city divided by sickness, political fear, and the powerstones its people depend upon."
+  "summary": "After five years beyond the Thran Empire, Yawgmoth is summoned to Halcyon to treat Glacian. The return brings him into a city divided by sickness, political fear, and the powerstones its people depend upon.",
+  "soundtrack": {
+    "status": "PROMPTS READY - AUDIO NOT GENERATED",
+    "mainTheme": "Create a 5-6 minute dark historical-fantasy instrumental theme for Yawgmoth?s return to Halcyon. Begin with solitary low bowed strings and a sparse, dry frame drum, carrying the long road and the weight of exile. Let measured strings and distant horns gather as the capital draws near; introduce restrained tension around ambition, illness, and the price of power. Allow one brief luminous rise for the temple foundation, then let the harmony darken toward an unresolved low note that leads into the next episode. Keep the arrangement spacious, with no vocals and clear room for spoken narration.",
+    "sceneCues": [
+      {
+        "name": "Pilgrim Way - exile returns",
+        "prompt": "A 60-75 second instrumental underscore: low bowed strings, sparse dry frame drum, and restrained desert wind. Let a measured pulse suggest a long road toward a city that has summoned back the man it once banished. Gradually introduce a distant, uneasy harmonic layer; no vocals, leave narration clear."
+      },
+      {
+        "name": "Halcyon threshold",
+        "prompt": "A 45-60 second restrained historical-fantasy cue: measured strings and a quiet walking pulse, with a few delicate harp notes as the engineered stream and marble gate come into view. Keep welcome and unease together; no triumphant resolution, no vocals, leave room for narration."
+      },
+      {
+        "name": "Descent beneath the city",
+        "prompt": "A 60-75 second low, spacious cue built from bowed bass strings, muted percussion, and faint metallic resonance. A lantern-like repeating pulse descends into a vast inhabited cavern; make it grave and human, not monstrous or horror-styled. End unresolved; no vocals, narration remains prominent."
+      },
+      {
+        "name": "Two patients",
+        "prompt": "A 45-60 second clinical, restrained underscore: low repeating strings, subtle harmonics, and occasional plucked metallic notes. Suggest observation, uncertainty, and the discomfort of treatment without sensational horror. Keep dynamics gentle and leave the spoken words clear; no vocals."
+      },
+      {
+        "name": "The foundation rises",
+        "prompt": "A 60-75 second cue that begins in held anticipation, then opens into luminous strings and distant horns as the great structure rises. Let public wonder briefly crest, then turn the harmony darker as the cost of the powerstone light becomes clear. End on a tense unresolved note; no vocals, narration stays in front."
+      }
+    ],
+    "mixGuidance": "Keep music low beneath narration with clear midrange for speech, restrained low frequencies, sparse sound effects, and gentle crossfades. Avoid vocals and avoid masking dialogue."
+  }
 }
