@@ -79,7 +79,7 @@
       "visualBeats": [],
       "suggestedCards": [],
       "artworkNote": "No direct scene-specific card artwork is verified in the local card index. Related character art is labeled separately; manual search and No card remain available.",
-      "videoEffect": "Tilt downward into the cavern?s depth, with restrained parallax among rough stone, lantern light, and distant fires; avoid horror imagery or invented figures in close view.",
+      "videoEffect": "Tilt downward into the cavern's depth, with restrained parallax among rough stone, lantern light, and distant fires; avoid horror imagery or invented figures in close view.",
       "audioPrompt": "Low cavern air, rope and careful footsteps, a lantern mechanism, and distant fire crackle; no screams or voices, keep the human setting grounded.",
       "transition": "Let the image darken briefly as the descent begins, then reveal the cavern on the next beat."
     },
@@ -170,7 +170,7 @@
   "summary": "After five years beyond the Thran Empire, Yawgmoth is summoned to Halcyon to treat Glacian. The return brings him into a city divided by sickness, political fear, and the powerstones its people depend upon.",
   "soundtrack": {
     "status": "PROMPTS READY - AUDIO NOT GENERATED",
-    "mainTheme": "Create a 5-6 minute dark historical-fantasy instrumental theme for Yawgmoth?s return to Halcyon. Begin with solitary low bowed strings and a sparse, dry frame drum, carrying the long road and the weight of exile. Let measured strings and distant horns gather as the capital draws near; introduce restrained tension around ambition, illness, and the price of power. Allow one brief luminous rise for the temple foundation, then let the harmony darken toward an unresolved low note that leads into the next episode. Keep the arrangement spacious, with no vocals and clear room for spoken narration.",
+    "mainTheme": "Create a 5-6 minute dark historical-fantasy instrumental theme for Yawgmoth's return to Halcyon. Begin with solitary low bowed strings and a sparse, dry frame drum, carrying the long road and the weight of exile. Let measured strings and distant horns gather as the capital draws near; introduce restrained tension around ambition, illness, and the price of power. Allow one brief luminous rise for the temple foundation, then let the harmony darken toward an unresolved low note that leads into the next episode. Keep the arrangement spacious, with no vocals and clear room for spoken narration.",
     "sceneCues": [
       {
         "name": "Pilgrim Way - exile returns",
