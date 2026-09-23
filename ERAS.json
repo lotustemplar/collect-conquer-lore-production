@@ -1,0 +1,2169 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "mtg-lore-initial-handoff-2026-09-13",
+  "id_policy": "Immutable UUIDv5-based IDs; retain existing IDs after label edits. Episode numbers and watch order are separate mutable fields.",
+  "provenance": {
+    "file_name": "MTG_Lore_Master_Story_Structure.md",
+    "sha256": "978f82fa778320bb689d4915a9968e42104cfc48fa7d65ae085ed196c6745d47",
+    "outline_status": "editorial_blueprint_not_scene_audited",
+    "conversion_scope": "Loss-preserving format conversion; no new canon research or software",
+    "revision_scope": "Editorial revision of the existing research; IDs, evidence catalogs, original fields, and uncertainty preserved. No new source verification is claimed."
+  },
+  "uncertainty_policy": "Unspecified dates remain null. Textual references do not prove scene presence. Estimates and unresolved descriptors stay labeled. All chronology prose is preserved verbatim.",
+  "source_catalog": [
+    {
+      "source_id": "source_db9f5eea3581534c935f13257e041801",
+      "title": "official Magic Story hub",
+      "url": "https://magic.wizards.com/en/story",
+      "verification_status": "checked_during_original_outline_preparation_not_rechecked_in_conversion",
+      "source_type": "online_anchor",
+      "evidence_scope": "Scope stated in original blueprint; not a citation for every episode"
+    },
+    {
+      "source_id": "source_50384f9c0ab15908abce05b326872c83",
+      "title": "official story archive",
+      "url": "https://magic.wizards.com/en/news/magic-story",
+      "verification_status": "checked_during_original_outline_preparation_not_rechecked_in_conversion",
+      "source_type": "online_anchor",
+      "evidence_scope": "Scope stated in original blueprint; not a citation for every episode"
+    },
+    {
+      "source_id": "source_b8192205396f5763a8201ce692791170",
+      "title": "The Brothers’ War overview",
+      "url": "https://magic.wizards.com/en/products/the-brothers-war",
+      "verification_status": "checked_during_original_outline_preparation_not_rechecked_in_conversion",
+      "source_type": "online_anchor",
+      "evidence_scope": "Scope stated in original blueprint; not a citation for every episode"
+    },
+    {
+      "source_id": "source_966a9e43abca5eaba2d6347a03fc6d80",
+      "title": "the Mending and its purpose",
+      "url": "https://magic.wizards.com/en/news/making-magic/27-things-you-might-not-have-known-about-time-spiral-block-2021-03-08",
+      "verification_status": "checked_during_original_outline_preparation_not_rechecked_in_conversion",
+      "source_type": "online_anchor",
+      "evidence_scope": "Scope stated in original blueprint; not a citation for every episode"
+    },
+    {
+      "source_id": "source_b813b119b1d2581dbd754eece364c36a",
+      "title": "Reality Fracture Episode 1",
+      "url": "https://magic.wizards.com/en/news/magic-story/reality-fracture-episode-1-tam-alive",
+      "verification_status": "checked_during_original_outline_preparation_not_rechecked_in_conversion",
+      "source_type": "online_anchor",
+      "evidence_scope": "Scope stated in original blueprint; not a citation for every episode"
+    },
+    {
+      "source_id": "source_adc009878a75558b9fbaefd56e78c85a",
+      "title": "Reality Fracture Episode 10",
+      "url": "https://magic.wizards.com/en/news/magic-story/reality-fracture-episode-10-happy-birthday",
+      "verification_status": "checked_during_original_outline_preparation_not_rechecked_in_conversion",
+      "source_type": "online_anchor",
+      "evidence_scope": "Scope stated in original blueprint; not a citation for every episode"
+    },
+    {
+      "source_id": "source_2551d8d7b55f5f7981c5262bdc4b14fa",
+      "title": "Chronicle of Bolas web fiction; official dragon guides; Future Sight novel",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_e4866a40042a5595abacf24c3fc017d6",
+      "title": "The Thran by J. Robert King; later legends and Fall of the Thran cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_8718aeff276b5cb39338a13cfe3f92c4",
+      "title": "The Brothers’ War by Jeff Grubb; Antiquities; 2022 historical side stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_3016868b656453d3a49ea7c02a87d691",
+      "title": "The Brothers’ War; Antiquities and BRO cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_b74a3f9dc0d25c83813a48f8052e783d",
+      "title": "The Brothers’ War; Antiquities; BRO historical stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_5151630fa9005b1d9e59bd91062bb590",
+      "title": "The Gathering Dark; The Dark; old guides",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_6331d4533ff65b038c24a245816f5ac7",
+      "title": "Fallen Empires cards; Duelist and official retrospective material",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_439a3b5ff05f55338214cf3ad8344e5f",
+      "title": "The Eternal Ice; Ice Age cards and guides",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_f56dfb6563ea58e6b6e4e5a1c978dc33",
+      "title": "The Shattered Alliance; Alliances; Coldsnap official summaries",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_d437b9b08904595d86e4829263c2e15c",
+      "title": "Planeswalker by Lynn Abbey",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_57747f7894ee504d9bbc4709e95a9ffc",
+      "title": "Planeswalker; Time Streams; Homelands comics and guides",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_00bbe76c4a2d5d18bcde220b757a703d",
+      "title": "Time Streams by J. Robert King",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_49c62b45170951ab94628bfc39656ac9",
+      "title": "Bloodlines by Loren L. Coleman; Weatherlight backstory",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_9ee85b979b3f53e3be0f99b114769065",
+      "title": "Mirage and Visions flavor; official summaries; period guides",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_dbfaba6e3fae509b8a84553a17f4b60c",
+      "title": "Weatherlight backstory; Rath and Storm; Tempest narrative",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_03a2137258b359e0823f8171009e3256",
+      "title": "Rath and Storm; Tempest, Stronghold, Exodus cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_dc2c7ec9c3db57e0a8a99b5be0ed723a",
+      "title": "Mercadian Masques novel by Francis Lebaron; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_e62aa59b7e3f5e89ae9053096728e1f6",
+      "title": "Nemesis by Paul B. Thompson; Prophecy by Vance Moore",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_58d2350ec4cd54158e04a612879f6c26",
+      "title": "Invasion and Planeshift novels; card story",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_f3e41b5fd5205a13b2e9e59d981d434e",
+      "title": "Apocalypse by J. Robert King; Invasion cycle",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_53c9304398af5328a6c3b9634188e028",
+      "title": "Odyssey, Chainer’s Torment, Judgment novels",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_6fcf82582d6a572aaa7aa3a08665aa82",
+      "title": "Onslaught and Legions novels; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_552c3fc689405ecabae373c723d022b3",
+      "title": "Scourge by J. Robert King",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_08334213c8ec5995adb10863e17f2196",
+      "title": "Mirrodin, The Darksteel Eye, The Fifth Dawn novels",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_1f5d11f42371524b9405affb2feedc23",
+      "title": "Outlaw, Heretic, Guardian by Scott McGough",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_d01320cc23c35485a2cda044c1d170d7",
+      "title": "Legends II trilogy; Future Sight",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_01ad3acce69a5dfc84c5b5d9612e82f6",
+      "title": "Ravnica, Guildpact, Dissension by Cory J. Herndon",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_c963e8abb02052178bef8dda02335257",
+      "title": "Lorwyn/Morningtide novels; Shadowmoor anthology and Eventide novel; official retrospective guides",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_d545f3ad511b550bad532e3d6172c284",
+      "title": "Time Spiral, Planar Chaos, Future Sight novels",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_90fe3005f175563a882e577ce15cf709",
+      "title": "Magic Origins official origin stories; later retcon checks",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_544a89a3dc725654b3f11f09d8686bf4",
+      "title": "Agents of Artifice; official web comics",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_ad50830a47bb5905b9aaffeeea41f1e0",
+      "title": "Alara Unbroken; web comics; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_db51f172f85954be9a557618894ebb44",
+      "title": "The Teeth of Akoum; official web fiction; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_407dc9f862795e6382ea6b76cab675af",
+      "title": "Scars block novels/web material; cards; official retrospectives",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_650b89a507a65c9eac8a81eee18af62e",
+      "title": "The Chain Veil/Curse of the Chain Veil official comics; later Onakke stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_fa69eb0ed67b571f8472a8df3d5e1603",
+      "title": "The Cursed Blade comics; Innistrad web fiction/cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_7c301c90e4da58308d9076101865fdef",
+      "title": "The Secretist by Doug Beyer; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_97b600eed255518f8fc7e639888e9431",
+      "title": "Godsend by Jenna Helland; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_b978abdffacc5692a82e659389b31655",
+      "title": "Khans, Fate Reforged, Dragons official web fiction",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_76f6941ce0b0511693cfae226ce97ee4",
+      "title": "Battle for Zendikar/Oath official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_b3bdcb0759ad5ccb98786a98190c1727",
+      "title": "Shadows/Eldritch Moon official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_91ae8ee1f13c53be8f117edabbfc74f6",
+      "title": "Kaladesh/Aether Revolt official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_5a30d55f8fbb5b22b57135291ff598bb",
+      "title": "Amonkhet/Hour official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_272d8ca2eb9958bd9131fbee804f82fc",
+      "title": "Ixalan/Rivals official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_55a55cc3fe5152609f3a1441e0327c8d",
+      "title": "Dominaria official stories; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_a86ded38f7fe50719debfe439accf427",
+      "title": "Guilds/Ravnica Allegiance stories and novel material",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_50de61f0bfc65da3b8badef54131769b",
+      "title": "War of the Spark: Ravnica; Forsaken; cards and trailers",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_729e6e806ee35adea884702d39292ba6",
+      "title": "Forsaken; official summaries and later references",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_97347fd4341b5e9daf0edfa9efc1aa65",
+      "title": "The Wildered Quest; cards",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_47b449551f715c3baa519cbf9107584d",
+      "title": "Theros Beyond Death official summary, cards, trailer; later Elspeth fiction",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_4bae4562eea85e3dac8fe3af592574de",
+      "title": "Sundered Bond; cards—depictions differ",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_3109ff96645a59899722c266beede9d1",
+      "title": "Zendikar Rising official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_fe9545ba616b5b1e9704288d27f1ba3a",
+      "title": "Kaldheim official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_3002a2be884f5aaea4a663898c5743cc",
+      "title": "Strixhaven official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_15f5acb4369a59efbac465220069caf5",
+      "title": "Midnight Hunt/Crimson Vow official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_22ba00960ae055c3a8eeabad7951597d",
+      "title": "Kamigawa Neon Dynasty official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_960c05fa35c057a8a32ae034417e638c",
+      "title": "New Capenna official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_c42f1fb81b1f5bf59562bdf9bcd8d1e6",
+      "title": "Dominaria United official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_43dea95982a456bfb3022312427f3a3c",
+      "title": "The Brothers’ War 2022 official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_3365c7d421775940a1f4d2a6dc113026",
+      "title": "All Will Be One official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_6fb0885a0f51583b9b489cd1e6af7906",
+      "title": "March of the Machine main and side stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_561fccb4de62552fb8d140df664063ec",
+      "title": "March of the Machine: The Aftermath cards; official stories/summaries",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_148db80280985dee9998f0a57ee95fcd",
+      "title": "Wilds of Eldraine official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_2d2dbff6d49152a3b7ac9c47243ab5af",
+      "title": "Lost Caverns official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_2ee4939b33945b37a639f2d61665d7c6",
+      "title": "Karlov Manor official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_fd76eec839c45f39b94a43c0c543e89a",
+      "title": "Thunder Junction official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_cc58a209f2ea5e21a79af46dfa9c3af9",
+      "title": "Bloomburrow official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_f20c961abe715a7cb262282d46e49a7b",
+      "title": "Duskmourn official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_d6d906f62bef56b9a9a9ab8c3ca685d6",
+      "title": "Aetherdrift official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_53036fb6b20d5128be7b96847dea07e7",
+      "title": "Tarkir Dragonstorm official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_08f8a8a1a25659e4a3f61e7c5def45a4",
+      "title": "Edge of Eternities official stories",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_0e036cb0d9cd50e0bcacaf8b61922e5a",
+      "title": "Lorwyn Eclipsed official episodes",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_9654780466075b1d959be1aadc9dabc7",
+      "title": "Secrets of Strixhaven official episodes",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_3d52415d4b735daeb6a18b5197f42cd1",
+      "title": "Reality Fracture Episodes 1–10 by Alison Lührs",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_dfb3e5824a7d551abd09136322706a83",
+      "title": "Conspiracy/Take the Crown cards and fiction",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_8f25215fb4e457e7b958b031ce489d0b",
+      "title": "Battlebond cards and official setting material",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    },
+    {
+      "source_id": "source_b8ddcb4202bd5bd7a2270604a9be403e",
+      "title": "Arabian Nights cards; official references to Rabiah the Infinite",
+      "url": null,
+      "verification_status": "direct_primary_text_scene_audit_required",
+      "source_type": "unresolved_source_family",
+      "evidence_scope": "Original arc-level bibliography; editions, chapters, and individual URLs were not supplied"
+    }
+  ],
+  "eras": [
+    {
+      "era_id": "era_010b08b7f13f5e6ebd54eae6e5219529",
+      "name": "The Thran and the first Phyrexians",
+      "watch_order": 1,
+      "chronological_position": "Roughly five millennia before Urza; commonly c. −4,500 AR; earlier cosmology is deferred.",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Glacian’s wound; Yawgmoth’s medical takeover; Thran civil war; the sealing of Koilos",
+      "important_planes_text": "Dominaria, Phyrexia; glimpses of other planes",
+      "important_characters_text": "Gix, Glacian, Rebbec, Yawgmoth, Dyfed",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_9745c88df78f532e8eea83864ef1d3b0"
+      ],
+      "character_ids": [
+        "character_e91a48198e4d5f44b3b917095996d90e",
+        "character_43d47f1f754c5c75b99e91623a622f77",
+        "character_a78bcb1fd3c65dbb9cdd36e9cb689f18",
+        "character_808764f6e6445015b65e0b99b064af21",
+        "character_103af7d4054956d8bff193cab525237e"
+      ],
+      "why_it_matters": "Opens with a personal injury that brings back Yawgmoth and sets up the powerstones, Gix, and the Brothers’ War.",
+      "arc_ids": [
+        "arc_17b13a20e9a45dda9a5540fce10a8119"
+      ],
+      "episode_ids": [
+        "episode_fe154711c41f55d4a58a1451c7fd804b",
+        "episode_6635ebde984f5509a6ad8e3dad8c81c7",
+        "episode_9a722f4a40fc5d4ca1af58caebbde8df",
+        "episode_e8c7339a38be5fab8b630cd14af83b5f",
+        "episode_a2f96f1697c6574c83c8d67358ed75d3",
+        "episode_c2041c7087625505bc8c2525717d77eb"
+      ],
+      "source_ids": [
+        "source_2551d8d7b55f5f7981c5262bdc4b14fa",
+        "source_e4866a40042a5595abacf24c3fc017d6"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Deep prehistory through the Thran collapse; roughly −20,000 to −4,500 AR, with uncertain anchors",
+        "The original broader deep-prehistory range is retained in original_fields; viewing now begins at the Thran crisis."
+      ],
+      "original_fields": {
+        "name": "**The ancient foundations**",
+        "position": "Deep prehistory through the Thran collapse; roughly −20,000 to −4,500 AR, with uncertain anchors",
+        "conflicts": "Elder Dragon rivalry; Thran decline; birth of Phyrexia",
+        "planes": "Dominaria, Phyrexia; glimpses of other planes",
+        "characters": "Ugin, Bolas, Dyfed, Yawgmoth, Glacian, Rebbec, Gix",
+        "why_it_matters": "Introduces cosmology and the oldest causes behind both major villain lineages."
+      }
+    },
+    {
+      "era_id": "era_421a154fe4425113bbbf8f280f1e869d",
+      "name": "The brothers and the ruined world",
+      "watch_order": 2,
+      "chronological_position": "0–63 AR and the following centuries",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Artifact arms race; Gix’s corruption; Sylex devastation; social and ecological collapse",
+      "important_planes_text": "Dominaria, Terisiare, Argoth, Sarpadia",
+      "important_characters_text": "Urza, Mishra, Tocasia, Kayla, Ashnod, Tawnos, Gix, Jodah",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d"
+      ],
+      "character_ids": [
+        "character_5a888358891f5536807d10c4fef03211",
+        "character_a79c24b23618577eb57af307a8ef5fd0",
+        "character_560c29a880325f9d96259584251cfc5c",
+        "character_49ff3e1716eb50f3b54bf40dea9c54dd",
+        "character_70e56c7a3843566881d20f88f040ef92",
+        "character_d5406af3303752f78205439ffca8cb37",
+        "character_dd72374be47f582d9544b0ce6b310b52",
+        "character_5773dc213cc9571cb51d580872521ae8",
+        "character_46a6d45165d150f6b769f27ce1ba4068",
+        "character_ed16323c3d6852bb9c57c8f43baffe3a",
+        "character_6fb6ea4463565c1eb26e7a4870c463db",
+        "character_521bd4aa09555ae9acc036a6bf756534"
+      ],
+      "why_it_matters": "Makes the great ancient war understandable before its consequences become background lore.",
+      "arc_ids": [
+        "arc_921f1b696bcc5627b779df81346697f3",
+        "arc_a0fe06f1e0f25deb8660e4e0c00f4647",
+        "arc_91a4f79288375ccab800df4373e31f7d",
+        "arc_ece32ac68e2153d4bc0b68f97c64a0f6",
+        "arc_94cd66c34cbc539a8124165c7162b259"
+      ],
+      "episode_ids": [
+        "episode_d7abe766d81e53c381d76270c83e23b4",
+        "episode_eb23f5f1606855dabab43c856fa9f5c4",
+        "episode_31368e3c87945907935b7e2b195a7dd7",
+        "episode_7a564163b76652018454c1d29929d24d",
+        "episode_d933633cb26f5dedbbb339aa723c0c51",
+        "episode_e71358529ab55f0291553c92ffc29eb1",
+        "episode_c2942f7728b05a239c0a38775271efdc",
+        "episode_085bcd930d4257f0a76b3f122b15294d",
+        "episode_aa26f8a881ac59b0b0be21a1bd8ac2bf",
+        "episode_f15c0a5391ed5dd8b5a6fa32b877c043",
+        "episode_b5e37e9c3d4953b8876ab77da8b0c0e5",
+        "episode_333b2430150d5671b9908268459acc01",
+        "episode_dea1e26e7b855b57bab2508efd052944",
+        "episode_a34435a4f16c5c019877a04a59dad8d1",
+        "episode_fd1766470ec35d65a1cdad2070b269b7",
+        "episode_197caf589e6b55fea4bd63bfe68df69b",
+        "episode_7ccde6c7ae5f5f65a179e5bbf8f1b830",
+        "episode_afcadde5984357019658409084d5059d",
+        "episode_6b39181c54f2580098b7f7b65c42fb58",
+        "episode_a556451a73815a4798c3b4cc692d15dc",
+        "episode_6fc4208d6ce25ad48b969e4d2f27629c",
+        "episode_618814f248a251d0a295114c4c960b54"
+      ],
+      "source_ids": [
+        "source_8718aeff276b5cb39338a13cfe3f92c4",
+        "source_b8192205396f5763a8201ce692791170",
+        "source_3016868b656453d3a49ea7c02a87d691",
+        "source_b74a3f9dc0d25c83813a48f8052e783d",
+        "source_5151630fa9005b1d9e59bd91062bb590",
+        "source_6331d4533ff65b038c24a245816f5ac7"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "0–63 AR and the following centuries"
+      ],
+      "original_fields": {
+        "name": "**The brothers and the ruined world**",
+        "position": "0–63 AR and the following centuries",
+        "conflicts": "Artifact arms race; Gix’s corruption; Sylex devastation; social and ecological collapse",
+        "planes": "Dominaria, Terisiare, Argoth, Sarpadia",
+        "characters": "Urza, Mishra, Tocasia, Kayla, Ashnod, Tawnos, Gix, Jodah",
+        "why_it_matters": "Makes the great ancient war understandable before its consequences become background lore."
+      }
+    },
+    {
+      "era_id": "era_9bea806ab7285e57b1196feb7e845acc",
+      "name": "Winter and the long-lived survivors",
+      "watch_order": 3,
+      "chronological_position": "c. 450–2934 AR and the thaw thereafter; Urza’s travels overlap",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Lim-Dûl; war between cold nations; World Spell; Urza’s hunt for Phyrexia",
+      "important_planes_text": "Dominaria, Phyrexia, Serra’s Realm, Ulgrotha",
+      "important_characters_text": "Jodah, Jaya, Freyalise, Lim-Dûl, Urza, Xantcha, Serra, Feroz",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_9745c88df78f532e8eea83864ef1d3b0",
+        "plane_2caabf18180f5040a15788f4f44f1ccb",
+        "plane_5f6c7e8520f1570e8133713368e49d69"
+      ],
+      "character_ids": [
+        "character_5773dc213cc9571cb51d580872521ae8",
+        "character_8994babe35ca557e9cbe06775262e6b9",
+        "character_3ac32d09432056b08f5c79945de5aac0",
+        "character_9dca6d55a4b75c8798cff8b5d1c24429",
+        "character_4862ee7fdead5415923a686e1f14a7e1",
+        "character_75588ec5cd365bcaa4f7e2e6427ae0e1",
+        "character_103af7d4054956d8bff193cab525237e",
+        "character_5a888358891f5536807d10c4fef03211",
+        "character_86fad495660b568cb8546072e7e85b98",
+        "character_ba49924b43cd55438b00ff5b0fb824ca",
+        "character_1ee0b428da6d5072848775dc7b2218c9",
+        "character_c41c64d6dd925d7a9ac498d597cfb80e",
+        "character_5f867910bf3759189162a585b1897a5f",
+        "character_1dece34b9adc57ddbb94bdef324890a7",
+        "character_7caae07feaa75c4f9402df93ef3f5b2b"
+      ],
+      "why_it_matters": "Keeps the mortal winter story together, then catches up with the overlapping planeswalker story.",
+      "arc_ids": [
+        "arc_ca94d70bed845bad9082535baff57d7d",
+        "arc_516a88be19a25bc6b5c91764deeaa287",
+        "arc_14211e8e62a55526af4aec06639d71ac",
+        "arc_bcbb6c5618a7576192a4b573271abf04"
+      ],
+      "episode_ids": [
+        "episode_394026d69f7955acb5c2d5db18d28b34",
+        "episode_6cfd588dec195ea78dd9cf62a19f692d",
+        "episode_987d68dfab3d5ff796264bec2b22aecf",
+        "episode_08a391948ad9508a85882537b73f2260",
+        "episode_cf9a8c00a16a55338fd0b7aa32f338bf",
+        "episode_dfd69d96b05c54379b7327ee56ba1bfe",
+        "episode_a0614f5661b654d492074fcc0a53e50c",
+        "episode_3c43bf1e586c54f7a96d96f99f708f94",
+        "episode_c0842471e46d534e8bf482ce671ce837",
+        "episode_97f76ba89b245e7d8e09595235b18113",
+        "episode_2522a3068a5a50308c33ef5a09d5e1c1",
+        "episode_6d4dcc62922157f9afb7c2054ea90bf4",
+        "episode_6f39ac6f78c959c297f0117f95f41027",
+        "episode_a7d230b39f8058148b3a6de9018fe65f",
+        "episode_7b985f6cbc54521f9b91c30814a9a165",
+        "episode_c63057c0d5d35d42b85d2eaf6ffc5d4e",
+        "episode_ed6a16619dde502d9cfedc9a41496dcd",
+        "episode_dfcb2010d08651059b4e5f3e51480956",
+        "episode_0c821559cbaf50beb6aa4bea7bc374e5",
+        "episode_92613503040a5697a6c52b9cb1554a26",
+        "episode_1183b96a3a235743b51904301fe7cd94",
+        "episode_0c55f3903ccc5313a46203780009578b"
+      ],
+      "source_ids": [
+        "source_439a3b5ff05f55338214cf3ad8344e5f",
+        "source_f56dfb6563ea58e6b6e4e5a1c978dc33",
+        "source_d437b9b08904595d86e4829263c2e15c",
+        "source_57747f7894ee504d9bbc4709e95a9ffc"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "c. 450–2934 AR and the thaw thereafter; Urza’s travels overlap"
+      ],
+      "original_fields": {
+        "name": "**Winter and the long-lived survivors**",
+        "position": "c. 450–2934 AR and the thaw thereafter; Urza’s travels overlap",
+        "conflicts": "Lim-Dûl; war between cold nations; World Spell; Urza’s hunt for Phyrexia",
+        "planes": "Dominaria, Phyrexia, Serra’s Realm, Ulgrotha",
+        "characters": "Jodah, Jaya, Freyalise, Lim-Dûl, Urza, Xantcha, Serra, Feroz",
+        "why_it_matters": "Keeps the mortal winter story together, then catches up with the overlapping planeswalker story."
+      }
+    },
+    {
+      "era_id": "era_bd47b4d9bed35abc8da42551206c75c0",
+      "name": "The Legacy is built",
+      "watch_order": 4,
+      "chronological_position": "Post-thaw centuries to c. 4205 AR",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Tolaria’s experiments; Bloodlines; Rath’s construction; regional wars",
+      "important_planes_text": "Dominaria, Rath, Phyrexia",
+      "important_characters_text": "Urza, Barrin, Jhoira, Teferi, Karn, Gerrard, Sisay, Vuel",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_d7f8e5c950335688a0c22f2a8c1c0159"
+      ],
+      "character_ids": [
+        "character_5a888358891f5536807d10c4fef03211",
+        "character_3dbdd1309c855528a5844fa8fcb528a6",
+        "character_31beaed40eaa5ad8bdd2c5e81ce1bc24",
+        "character_078076016c3e5caa9d315258de6d990d",
+        "character_05c522d2c4af57d592b47096ba77bdf8",
+        "character_6fd9a135b8145bbfa55269d3fd6c194e",
+        "character_c536cec06d7754ceaa9d3033789f65aa",
+        "character_30c92e7c2c96597dbd1a2ae7ce1ac594",
+        "character_e7a36bdb765454608344a0e42f0eb03c",
+        "character_9f72e38b85225c3888e1a865277d13ae",
+        "character_24ff5c41b5545e4fa9279a80f36587e7",
+        "character_e3bab0a86a725943b306d42984ce4ceb",
+        "character_e6f10c23fbd05230a6cb806764e69702",
+        "character_ca78490fce5b549b8cf52eb4d4273696",
+        "character_b69db85d1e2c5f3697d9cc110172ecf5",
+        "character_560bcfb5f2e153dfb5e2ce918c7b9fcc"
+      ],
+      "why_it_matters": "Shows how weapons, bloodlines, and personal loyalties become the Weatherlight Saga.",
+      "arc_ids": [
+        "arc_be3685afdfcb552c89a18c989ddba8c8",
+        "arc_227491cdf65852af908c1903d871be3e",
+        "arc_2ad7de9aff16514f903fe30b1e57335c",
+        "arc_adf7b063ce4450f78981d1c9f61d8353"
+      ],
+      "episode_ids": [
+        "episode_28f6ada3c1965445aaed5586dcd0f3c5",
+        "episode_795738d731e25611965733a781f437a9",
+        "episode_ac8629f5122a5890a1558351355eed85",
+        "episode_2bf7ca90cb1d57909fac5b43bf661d29",
+        "episode_6f2593ceff3a5d2fbbf3aa3e8696d9bf",
+        "episode_93ec1dea204854cca2a0bef7cca52b37",
+        "episode_6cc3128bfc445b8aaf14b0af87994c85",
+        "episode_24acb23ad7a25952a474240f9cecf837",
+        "episode_255e4efb136f5fdfbbceb82d3d4671ef",
+        "episode_58c57c1dd96a5b619ebacd21f3efa0c9",
+        "episode_7e7f72a248fc5d67b8d60ab2f636e207",
+        "episode_4b2a3f69e37b5e7294862944b0d8c5b4",
+        "episode_1c70dc922b1955449abc9f600ae6578f",
+        "episode_525932a9d9ca504189a2b1fb7b736852",
+        "episode_8332532a2a615b909cd445a04ff966f7",
+        "episode_5265d7473cb4573abf1e390f5e72dd22",
+        "episode_adb7c09a5aa35c60ac094559940a122b",
+        "episode_0e5e8dbbed6b5e95b621994d6118f9b9",
+        "episode_57b2bff0fd7a597cb61da6d3449045f0"
+      ],
+      "source_ids": [
+        "source_00bbe76c4a2d5d18bcde220b757a703d",
+        "source_49c62b45170951ab94628bfc39656ac9",
+        "source_9ee85b979b3f53e3be0f99b114769065",
+        "source_dbfaba6e3fae509b8a84553a17f4b60c"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Post-thaw centuries to c. 4205 AR"
+      ],
+      "original_fields": {
+        "name": "**The Legacy is built**",
+        "position": "Post-thaw centuries to c. 4205 AR",
+        "conflicts": "Tolaria’s experiments; Bloodlines; Rath’s construction; regional wars",
+        "planes": "Dominaria, Rath, Phyrexia",
+        "characters": "Urza, Barrin, Jhoira, Teferi, Karn, Gerrard, Sisay, Vuel",
+        "why_it_matters": "Shows how weapons, bloodlines, and personal loyalties become the Weatherlight Saga."
+      }
+    },
+    {
+      "era_id": "era_5e27ce0186425c11973ff312cf3f5dec",
+      "name": "Weatherlight and the invasion",
+      "watch_order": 5,
+      "chronological_position": "c. 4205–4206 AR",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Rescue on Rath; Mercadian deception; Rath overlay; Yawgmoth’s invasion",
+      "important_planes_text": "Dominaria, Rath, Mercadia, Phyrexia",
+      "important_characters_text": "Gerrard, Sisay, Karn, Hanna, Mirri, Crovax, Ertai, Urza, Yawgmoth",
+      "plane_ids": [
+        "plane_d7f8e5c950335688a0c22f2a8c1c0159",
+        "plane_8dc0f79e35285c2f8de25e00ce5e1469",
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_9745c88df78f532e8eea83864ef1d3b0"
+      ],
+      "character_ids": [
+        "character_05c522d2c4af57d592b47096ba77bdf8",
+        "character_c536cec06d7754ceaa9d3033789f65aa",
+        "character_e7a36bdb765454608344a0e42f0eb03c",
+        "character_9f72e38b85225c3888e1a865277d13ae",
+        "character_ca78490fce5b549b8cf52eb4d4273696",
+        "character_b69db85d1e2c5f3697d9cc110172ecf5",
+        "character_560bcfb5f2e153dfb5e2ce918c7b9fcc",
+        "character_52984f21e657585f96add12ddd5077db",
+        "character_fda03cade1b55d83af722876cf52d63c",
+        "character_48eeb6ab75f651939adbee2fc8e1a84b",
+        "character_6fd9a135b8145bbfa55269d3fd6c194e",
+        "character_694ebc097da850729af64b2d66c4629c",
+        "character_2eeae2a2da1d599395df8b4b38ff63e1",
+        "character_18aef1ef42e451e5bfc80ade49d0d5d0",
+        "character_5a888358891f5536807d10c4fef03211",
+        "character_3dbdd1309c855528a5844fa8fcb528a6",
+        "character_078076016c3e5caa9d315258de6d990d",
+        "character_af96769702a45f409346eae1d58fb3aa",
+        "character_e91a48198e4d5f44b3b917095996d90e"
+      ],
+      "why_it_matters": "Pays off the first great causal spine with a connected adventure and catastrophe.",
+      "arc_ids": [
+        "arc_831222a0f65353968a8df447f9e945f8",
+        "arc_c486d5f9ad7b5656b56d20ffc90f4293",
+        "arc_1f25351e8a7c5ce4beaeca634654727b",
+        "arc_a22d509e4ff8517084b7fec45960efa6",
+        "arc_c97f6f8bc04b58e38d57c5ba7f403aa2"
+      ],
+      "episode_ids": [
+        "episode_9498590de1db542281c70a30a6bf832e",
+        "episode_4fa83429ed545cb9860e50334e9d2ed1",
+        "episode_ca55f7cdc3ab5929bb1fc73d191837c9",
+        "episode_93c75c99a1d35e3c839dcfd7880ce643",
+        "episode_ac29c3f6888c5c07851781459247e4ba",
+        "episode_685c972f8f7c5640a26ebadd57c14faf",
+        "episode_8e213c71629e580cae271dcb79af58a3",
+        "episode_559e06bab014581fa164de73698812b5",
+        "episode_ea748dacd5325e7da9222a3d7b27f585",
+        "episode_bfc8d59581a35002ae3625efb9a68735",
+        "episode_879bd33daf865aaeaababfd0908c0ee2",
+        "episode_cd9ef18daf4a53438cbb144cc8a4a894",
+        "episode_fed24c2382d3571cb534e2f38668cff8",
+        "episode_5ffab34c6c22570fbc2fce1f5543d277",
+        "episode_8311ac6b35f554b3b786a26652bb3ede",
+        "episode_85f5af03295857c3bb8791a397a820ec",
+        "episode_30c487c5a876572c833fe57f76df927b",
+        "episode_3bb490f9f6ac5997ad9c2dd306bf810a",
+        "episode_5a940583be055e3488620f9cb3fc0ea6",
+        "episode_e32e1d2ee0b05cee941499d6a234cbac",
+        "episode_8fcebd032166520884443575fdab5732",
+        "episode_91be88b81f575715bd3db9395cc8dea1",
+        "episode_de441c7044d45b74ac18553cb7e6cc4e",
+        "episode_cc4406b751d85660b6d1f6eca652c08e",
+        "episode_e9b124b70496598097d1f1259c7597dc",
+        "episode_6ecf4b79cd4150bb80acb2d78a26a549",
+        "episode_18034a7632b75be9bad36549450e221e",
+        "episode_afba8016bada58cdb5a31212eb2de09a",
+        "episode_a0fc3941d5af5ab083fb07bc94f440ba"
+      ],
+      "source_ids": [
+        "source_03a2137258b359e0823f8171009e3256",
+        "source_dc2c7ec9c3db57e0a8a99b5be0ed723a",
+        "source_e62aa59b7e3f5e89ae9053096728e1f6",
+        "source_58d2350ec4cd54158e04a612879f6c26",
+        "source_f3e41b5fd5205a13b2e9e59d981d434e"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "c. 4205–4206 AR"
+      ],
+      "original_fields": {
+        "name": "**Weatherlight and the invasion**",
+        "position": "c. 4205–4206 AR",
+        "conflicts": "Rescue on Rath; Mercadian deception; Rath overlay; Yawgmoth’s invasion",
+        "planes": "Dominaria, Rath, Mercadia, Phyrexia",
+        "characters": "Gerrard, Sisay, Karn, Hanna, Mirri, Crovax, Ertai, Urza, Yawgmoth",
+        "why_it_matters": "Pays off the first great causal spine with a connected adventure and catastrophe."
+      }
+    },
+    {
+      "era_id": "era_8cb7ee1273385944a3b9e4c42f57479e",
+      "name": "Otaria and the wounds of victory",
+      "watch_order": 6,
+      "chronological_position": "Soon after 4206 AR to roughly 4306 AR; exact gaps require source checks",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Mirari corruption; Cabal conflict; Akroma–Phage war; Karona",
+      "important_planes_text": "Dominaria, Otaria",
+      "important_characters_text": "Kamahl, Jeska, Chainer, Braids, Ixidor, Akroma, Phage, Karona",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_f412f708470d5b9aad7e573b3c551e02"
+      ],
+      "character_ids": [
+        "character_44c19a6c8beb5ffdb6d7620a32cbc43a",
+        "character_9895b79572bd5e19885bed52adae8b82",
+        "character_39092449caf95f82aabab7b0515c9769",
+        "character_f963488f025059d4a6fa498e7174b41f",
+        "character_dadc2b787b9157219fd684583ef946df",
+        "character_08ec78a1a05b5ac6a2eeb5797296e600",
+        "character_80fcfb53b2aa5d448322f6a64b0cf5a3",
+        "character_d209bf91fe6c5da7b7560aef460c8534",
+        "character_f416c69385785dcd96ba56a19b0cd4da",
+        "character_38365806762453fbb6bbc4ba23c12712",
+        "character_33b64cbfbb825f68b4b17f6476f184f8",
+        "character_05c522d2c4af57d592b47096ba77bdf8",
+        "character_8f49bc8746b75b13a928f04c1a453e92",
+        "character_49729ee6dea55166b5b957baae9349dd",
+        "character_3c6aee28b83b5d388184f88ea72c9f7c",
+        "character_49d5d42f021d549ab6e75fb71d1a8a39"
+      ],
+      "why_it_matters": "Shows why defeating Yawgmoth does not heal Dominaria or resolve the danger of powerful artifacts.",
+      "arc_ids": [
+        "arc_de3423505a2d554ca66b074d449ecce6",
+        "arc_b8440ea1bcdc5a448975222c75462b27",
+        "arc_f134830960925a53bcd3f99388a47bf3",
+        "arc_803c6ee97b7750b2b50c855795980dee"
+      ],
+      "episode_ids": [
+        "episode_3f1de2fe43555c10a59f93f06dd984b5",
+        "episode_d1bf563e97bb512ba4fc1c6d7ade4061",
+        "episode_b561541adeed5765997670565a3f6ed0",
+        "episode_529b4aabf69f5182b22f278bc1db7295",
+        "episode_262674c953635aa69c7e3ff41931da8c",
+        "episode_d6198f416af456a39edda3fb9ece42f6",
+        "episode_48db56f6a5425d128c84789c2dd722fb",
+        "episode_cb50ccca502b59eab36ab928e4a327df",
+        "episode_f01ca622843056e8863eb7cd964bc677",
+        "episode_5933250ff80f51638245bfb7d7392451",
+        "episode_245d94f887115d29bfa05cbe269e3063",
+        "episode_6b017e8e08f45571ab0279df486021e6",
+        "episode_f2a02ae2332254518661cbe85be808fe",
+        "episode_314f0b19398354a790ad6bd676f4fb3a",
+        "episode_eeab7e04832457aa952bbd4fab937aea",
+        "episode_bef4f1dad424572c94f355c448338c91",
+        "episode_4d697b4a1d85582d8117c0489b64c929",
+        "episode_86be36d697f552898271e76e4083be8f",
+        "episode_53a96a06e40c57238881a35a804bc034",
+        "episode_bfa944b01e275f14a60875ae4b4e15a1",
+        "episode_461b15cccada5b499aa52a185e934cb3"
+      ],
+      "source_ids": [
+        "source_53c9304398af5328a6c3b9634188e028",
+        "source_6fcf82582d6a572aaa7aa3a08665aa82",
+        "source_552c3fc689405ecabae373c723d022b3",
+        "source_08334213c8ec5995adb10863e17f2196"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Soon after 4206 AR to roughly 4306 AR; exact gaps require source checks"
+      ],
+      "original_fields": {
+        "name": "**Otaria and the wounds of victory**",
+        "position": "Soon after 4206 AR to roughly 4306 AR; exact gaps require source checks",
+        "conflicts": "Mirari corruption; Cabal conflict; Akroma–Phage war; Karona",
+        "planes": "Dominaria, Otaria",
+        "characters": "Kamahl, Jeska, Chainer, Braids, Ixidor, Akroma, Phage, Karona",
+        "why_it_matters": "Shows why defeating Yawgmoth does not heal Dominaria or resolve the danger of powerful artifacts."
+      }
+    },
+    {
+      "era_id": "era_a23ab8dbf4585684bd4578bcb10c44f7",
+      "name": "Neighboring histories before the Mending",
+      "watch_order": 7,
+      "chronological_position": "Plane-local centuries; not one synchronized AR interval",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Kami War; Guildpact collapse; Bolas in Madara; ancient dragon conflicts revisited before Madara",
+      "important_planes_text": "Kamigawa, Ravnica, Dominaria",
+      "important_characters_text": "Toshiro, Michiko, Konda, Azor, Kos, Szadek, Tetsuo, Bolas; Bolas and Ugin in a bounded ancient flashback",
+      "plane_ids": [
+        "plane_76150507eada57139bd27de21a7952e7",
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_feb874e037ea5c37b90de41870f37ea8",
+        "plane_6eda8aa097f155c09b13c6b4d68dc8bc"
+      ],
+      "character_ids": [
+        "character_fd11bab20c6b56fab74a9eeaaa56298d",
+        "character_395612c92d0256daa1afa0100eac7922",
+        "character_5a63890a5b835110807229f4185e28f4",
+        "character_803529bc9b7b545fbf1a4110804a7070",
+        "character_22059ace1581533d82cf50f27e509cae",
+        "character_9c863e15fc7c50949aa06da69009e3b4",
+        "character_e07da21f29d059a2ae5f75b71fa103d4",
+        "character_ca991377f9015b788513fb01f8e2ed9c",
+        "character_a9740cf815165795bf63bff57f0b45ae",
+        "character_8ccc3440976c5b09ab43d9fa0ba9f866",
+        "character_70e1d5e5402053209f1ef7e6bfa5e8b0",
+        "character_b64090f621d45bc3be40d2fb5d814587",
+        "character_c28f701884c1509b8fdb74375a9d692f",
+        "character_4de773f392585a208775154fc1823200",
+        "character_d304a1756ee856f9a9c252e94a6cab60",
+        "character_73268e90331c56a185ed99e0a97cee37",
+        "character_99c9f762a8b55072892b2f07d361d406",
+        "character_d08c69bb685857cf862a522de6a892bf",
+        "character_d72a84ad69c955ae8326dc5df86b4c42",
+        "character_56673f3d104c5a55b13dcdada74c8c99",
+        "character_e1d0726cb7795b5e9ef283e5c5b5e055"
+      ],
+      "why_it_matters": "Provides intact plane chronicles before modern characters inherit these worlds; each begins with a clear time reset.",
+      "arc_ids": [
+        "arc_019973fac6f657cab81bc629a376db15",
+        "arc_bdc13ae1fb9856d48007a05c1020d7b7",
+        "arc_0afef44faccc5bb7af096923f67b6a5c",
+        "arc_f518e5efab685b25b3f197e9c91313c4",
+        "arc_5bdc6b12ffa052f6b3f0fd56d713dd97"
+      ],
+      "episode_ids": [
+        "episode_3b0559f046355c5d9109b4880ea7d221",
+        "episode_e11d6e8d64fc5231bb93d8f4880778a3",
+        "episode_bc0ed0c470f7506a930d8450585bac1a",
+        "episode_6b07e445dcf65610aa731644b0bdf4e9",
+        "episode_839623b386425f5f96d1c1bb5c7a8a55",
+        "episode_62d9fbb2a57e5a2689547fc1015448ea",
+        "episode_a190b384952852b49e40cf68c7bd23a4",
+        "episode_84ee581560a05e7a9ef08f9d8afa7bab",
+        "episode_68071c8a8c3b5e9196a56c9bc9554265",
+        "episode_ed087dc77e20561dabef67bb7fb3a425",
+        "episode_a635f0b39e4d56dd87fb40c352ebb435",
+        "episode_d0b72254e2315a73a786e90bb92999b3",
+        "episode_95010ec92a7e520e9e4cfbf49f90b852",
+        "episode_77cb37944bd0584992d847b49d664541",
+        "episode_027b54a815b1530ea28ac8580f69916b",
+        "episode_401428ab20465a7f9fb0d8468e43c092",
+        "episode_52dff004cbe153e1b332e4444f13c06c",
+        "episode_d0133f334d8051549015d1f2672b34a9",
+        "episode_3a279ff27c19584bb3085019be0fbbdc",
+        "episode_5dfccd622fd654f99a1de66d6b774ad5",
+        "episode_4ee91e4a636a5dbfb3fb5a32ccb16e4a",
+        "episode_2510291db3225d798955e06fad725088"
+      ],
+      "source_ids": [
+        "source_1f5d11f42371524b9405affb2feedc23",
+        "source_d01320cc23c35485a2cda044c1d170d7",
+        "source_01ad3acce69a5dfc84c5b5d9612e82f6",
+        "source_c963e8abb02052178bef8dda02335257"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Plane-local centuries; not one synchronized AR interval"
+      ],
+      "original_fields": {
+        "name": "**Neighboring histories before the Mending**",
+        "position": "Plane-local centuries; not one synchronized AR interval",
+        "conflicts": "Kami War; Guildpact collapse; Bolas in Madara",
+        "planes": "Kamigawa, Ravnica, Dominaria",
+        "characters": "Toshiro, Michiko, Konda, Azor, Kos, Szadek, Tetsuo, Bolas",
+        "why_it_matters": "Provides intact plane chronicles before modern characters inherit these worlds; each begins with a clear time reset."
+      }
+    },
+    {
+      "era_id": "era_1eb138ceb3ad53c0ad9d60aaf1d63605",
+      "name": "The time crisis and the Mending",
+      "watch_order": 8,
+      "chronological_position": "c. 4505 AR; apparent past/future events are temporal incursions",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Rifts; phased lands; old-walker sacrifices; Bolas’s return",
+      "important_planes_text": "Dominaria and alternate echoes",
+      "important_characters_text": "Teferi, Jhoira, Venser, Radha, Karn, Freyalise, Jeska, Leshrac, Bolas",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d"
+      ],
+      "character_ids": [
+        "character_e07da21f29d059a2ae5f75b71fa103d4",
+        "character_3ac32d09432056b08f5c79945de5aac0",
+        "character_31beaed40eaa5ad8bdd2c5e81ce1bc24",
+        "character_078076016c3e5caa9d315258de6d990d",
+        "character_05c522d2c4af57d592b47096ba77bdf8",
+        "character_9895b79572bd5e19885bed52adae8b82",
+        "character_fca2536d30725763bd21cfdd0da061e7",
+        "character_7e86af4a677c59e28c7962bba7f12097",
+        "character_ba516a56dabd562e9db4b858645918bf"
+      ],
+      "why_it_matters": "Changes the rules of sparks and interplanar travel; every later arc depends on this transition.",
+      "arc_ids": [
+        "arc_ef23e8cd48d755ecb70fa2c3e7278f87"
+      ],
+      "episode_ids": [
+        "episode_62590199a14353c5839adf1590bbc64a",
+        "episode_6b701c2d7f685e2093b0e4960d5ec0b3",
+        "episode_dd15d4abfe175fa4a6bd88e3808a6027",
+        "episode_1e9399b317835742958b755404482f30",
+        "episode_7b4b094ebb2a541492b581d6b0d8dd77",
+        "episode_a7159506ed325155be943de6297dd45d",
+        "episode_37d120d855b55f5aaec7cab816a2429f",
+        "episode_4ce1435383b65052879d965b74630a6c",
+        "episode_19aeff5fae2b589a8b05dca42ff6410f"
+      ],
+      "source_ids": [
+        "source_d545f3ad511b550bad532e3d6172c284",
+        "source_966a9e43abca5eaba2d6347a03fc6d80"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "c. 4505 AR; apparent past/future events are temporal incursions"
+      ],
+      "original_fields": {
+        "name": "**The time crisis and the Mending**",
+        "position": "c. 4505 AR; apparent past/future events are temporal incursions",
+        "conflicts": "Rifts; phased lands; old-walker sacrifices; Bolas’s return",
+        "planes": "Dominaria and alternate echoes",
+        "characters": "Teferi, Jhoira, Venser, Radha, Karn, Freyalise, Jeska, Leshrac, Bolas",
+        "why_it_matters": "Changes the rules of sparks and interplanar travel; every later arc depends on this transition."
+      }
+    },
+    {
+      "era_id": "era_09b7a1146fbf5070bdf6792a3b5c73e2",
+      "name": "The first post-Mending journeys",
+      "watch_order": 9,
+      "chronological_position": "After c. 4505 AR; plane-local order matters more than cross-plane dates",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "The Consortium; Alara’s Conflux; Eldrazi release; New Phyrexia; Innistrad’s demons",
+      "important_planes_text": "Ravnica, Alara, Zendikar, Mirrodin, Innistrad",
+      "important_characters_text": "Jace, Chandra, Ajani, Elspeth, Tezzeret, Sarkhan, Nissa, Liliana, Garruk, Karn",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_ddc4ad1368cd5942b7f349f882f55dac",
+        "plane_3e3c185f67675834aed10495b3e391e7",
+        "plane_26b63aa608ab5d7c970a657fa162475a",
+        "plane_6f795e7906835366933a91dd91f65c48",
+        "plane_feb874e037ea5c37b90de41870f37ea8",
+        "plane_e14a038d53da57ec90aaa580caf5198f",
+        "plane_f412f708470d5b9aad7e573b3c551e02",
+        "plane_4fb548ff82d2514486affd649d0cb2eb",
+        "plane_fa711b5265545106bd4efce8f9a5453a",
+        "plane_104c4b60bebe5259acf567666950f536"
+      ],
+      "character_ids": [
+        "character_49a6a650bed757199e60acd1d6692ef9",
+        "character_b0b8d125b1cb5e33980dacc75a627275",
+        "character_666036fd1a85520a84a0452e7d9ebd00",
+        "character_b8a067210be4524e8ab2c51f3d4bd806",
+        "character_bbcfcb609d945b888ab1663777045cc1",
+        "character_0ea5865b84c8593a975e7118d069df82",
+        "character_af38b3045def5a6cb1b8a1f075ee1d35",
+        "character_62e13d98979f5faf814ca94474605202",
+        "character_e8ddb23b87875bdaafb2895fa8eb401e",
+        "character_e07da21f29d059a2ae5f75b71fa103d4",
+        "character_596db45fa5de564cb75122a4b4fabdb6",
+        "character_580078787ad75a4c95191c361feb881f",
+        "character_3e7f566e0274535bb8dafbedb3626757",
+        "character_499e6b89211e5b99a744f3f93e3a1387",
+        "character_d2e2c97d9f4855bea787d79ef1510dd0",
+        "character_ca991377f9015b788513fb01f8e2ed9c",
+        "character_99a72aa1511f5a359d27eff27eb2674d",
+        "character_583b85ec7c5159cd82168e36d9fc93fb",
+        "character_05c522d2c4af57d592b47096ba77bdf8",
+        "character_fca2536d30725763bd21cfdd0da061e7",
+        "character_214e8849b04c58e8be5082f998f260d2",
+        "character_090a2ca93d0c53fb86b88f6b95153a3f",
+        "character_992d381de6a05edc802438a90eb983f9",
+        "character_7b067775c96c54ca91512a9c3dd82a2d",
+        "character_9accf726eac25934862780820364741e",
+        "character_d6f02515d67d5a53b985e459a6861c05"
+      ],
+      "why_it_matters": "Introduces the modern recurring cast through complete plane arcs rather than constant chronological cutting.",
+      "arc_ids": [
+        "arc_3ef1bfe37cf45d5fa1931d1765222a19",
+        "arc_55c83b118cd1548cb38af56e1ab48796",
+        "arc_0f4ed685799d5b0db7e5f6618c3c0240",
+        "arc_915283f43abb528baeb354d2e4d5dc7a",
+        "arc_dd0014238bf0579ca18d4307c2628af4",
+        "arc_c6274c7249225d89a41f0874105afbf1",
+        "arc_d4a7a35514de52378c779f0471354ebf"
+      ],
+      "episode_ids": [
+        "episode_618b06366ae05e629e5974c6cde02a83",
+        "episode_c7e53842f0ed5b9ca3c1593c43b01ccf",
+        "episode_d7b29e16063a5768ab3fe1935150f980",
+        "episode_ba5cde646d315a48a9821b5e0a9cd245",
+        "episode_34a8781cc54158ddbd5ebb22024698fc",
+        "episode_0eccce77209a5b38ada7fd079035862b",
+        "episode_dcdc8fa3a4af59829158ce9e0bde4157",
+        "episode_38a62a90b6f3574180cd40b3c690598c",
+        "episode_51ce48af043f56bab681c62c3dc22993",
+        "episode_d7895d6bf152553faecf59476bc0153d",
+        "episode_92c71760632157e9b39d94daa2dc408d",
+        "episode_33a1b7a9fe7b57d69e9646e5ffdf8756",
+        "episode_f32a03e29b245835898b791ae5b3597e",
+        "episode_7f205eeb5e5e50c5bf1713087e6ff812",
+        "episode_11118ce38ce6549ebad893e5d221ffb4",
+        "episode_c16027f0117750f9847d6877f1e323a0",
+        "episode_a2ab3e77334050f18a1ae67062049793",
+        "episode_db0e41fbfbbf57f3a3305de335c20583",
+        "episode_4c33dd750d9450b4a9338e100f1468ad",
+        "episode_ffd2eb0bc3c4541bbc89068207074da5",
+        "episode_df49c925a1d55dd6969bf7a9c8b5b5cc",
+        "episode_aac2c6d263b95d80b1fbc6e5da4d14dd",
+        "episode_503d516f36c55a089d733db4e7f81b09",
+        "episode_13a6342cdffb5f308119dc3c7a1cee8d",
+        "episode_9ffc1839a6945d63849fd4a5d0eda74b",
+        "episode_4e3d269e297d5418b45fed8a6bb077a1",
+        "episode_e86e07cb089c5a01a1d5770fd835c793",
+        "episode_af9a09b6aca35f4aa037c6320a419030",
+        "episode_61dbc5cf950156859c8cc1345b716b8b",
+        "episode_d653165e33345203abbf9f4185c110c3",
+        "episode_6c1521f125c05857be012f0dc5fafc9b",
+        "episode_e184b6189799579899c4145381565232",
+        "episode_58f82fe500a951e983a024126ab66cb2",
+        "episode_9434107d935b5588bf26b27f03975c64",
+        "episode_2a9f5ce924bc557bb15862cfcd2b74e8",
+        "episode_87c3b720c18258469328611251039213",
+        "episode_3a57de28458a5db0bbfaab853c2ea067",
+        "episode_fddbff3e5743573aaca3cecebfd8f2d5"
+      ],
+      "source_ids": [
+        "source_90fe3005f175563a882e577ce15cf709",
+        "source_544a89a3dc725654b3f11f09d8686bf4",
+        "source_ad50830a47bb5905b9aaffeeea41f1e0",
+        "source_db51f172f85954be9a557618894ebb44",
+        "source_407dc9f862795e6382ea6b76cab675af",
+        "source_650b89a507a65c9eac8a81eee18af62e",
+        "source_fa69eb0ed67b571f8472a8df3d5e1603"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "After c. 4505 AR; plane-local order matters more than cross-plane dates"
+      ],
+      "original_fields": {
+        "name": "**The first post-Mending journeys**",
+        "position": "After c. 4505 AR; plane-local order matters more than cross-plane dates",
+        "conflicts": "The Consortium; Alara’s Conflux; Eldrazi release; New Phyrexia; Innistrad’s demons",
+        "planes": "Ravnica, Alara, Zendikar, Mirrodin, Innistrad",
+        "characters": "Jace, Chandra, Ajani, Elspeth, Tezzeret, Sarkhan, Nissa, Liliana, Garruk, Karn",
+        "why_it_matters": "Introduces the modern recurring cast through complete plane arcs rather than constant chronological cutting."
+      }
+    },
+    {
+      "era_id": "era_61afccce8243542cbd6e8b78566f31e7",
+      "name": "Bolas moves his pieces",
+      "watch_order": 10,
+      "chronological_position": "Return to Ravnica through the formation of the Gatewatch",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Guild crisis; divine betrayal; changed Tarkir; renewed Eldrazi war",
+      "important_planes_text": "Ravnica, Theros, Tarkir, Zendikar",
+      "important_characters_text": "Jace, Ajani, Elspeth, Sarkhan, Ugin, Gideon, Nissa, Chandra",
+      "plane_ids": [
+        "plane_feb874e037ea5c37b90de41870f37ea8",
+        "plane_3e3c185f67675834aed10495b3e391e7",
+        "plane_2f1be336dbce51e292ecc64196692c8c",
+        "plane_ddc4ad1368cd5942b7f349f882f55dac",
+        "plane_104c4b60bebe5259acf567666950f536"
+      ],
+      "character_ids": [
+        "character_73268e90331c56a185ed99e0a97cee37",
+        "character_b0b8d125b1cb5e33980dacc75a627275",
+        "character_4e8c2a4386885a99bb7c5164c4bd7abe",
+        "character_3e7f566e0274535bb8dafbedb3626757",
+        "character_499e6b89211e5b99a744f3f93e3a1387",
+        "character_c2500793c26c5008b029b89ef6dd55a0",
+        "character_4b6c7a64a0c85475ae8378a3ee72f7a3",
+        "character_1e0f2c0427c856faa9e5f12206a23bd4",
+        "character_ca991377f9015b788513fb01f8e2ed9c",
+        "character_d2e2c97d9f4855bea787d79ef1510dd0",
+        "character_99a72aa1511f5a359d27eff27eb2674d",
+        "character_ba2b707669805505b7bd27b6a02528b6",
+        "character_49a6a650bed757199e60acd1d6692ef9",
+        "character_0ea5865b84c8593a975e7118d069df82",
+        "character_e8ddb23b87875bdaafb2895fa8eb401e",
+        "character_57a8b2f8e0e5509498ab7cec50b1b0f6",
+        "character_1b9e2467f4035b359f4ce8a840d9c03b",
+        "character_d751a4970c6452c38733f528cfb30343",
+        "character_b8a067210be4524e8ab2c51f3d4bd806",
+        "character_583b85ec7c5159cd82168e36d9fc93fb",
+        "character_bd550e94d3cb5815b5ade5e124f9c49a",
+        "character_7b067775c96c54ca91512a9c3dd82a2d",
+        "character_d4af627dd1435ef7a17f02ec8a775508"
+      ],
+      "why_it_matters": "Builds the team and reveals that separate plane crises are connected through recurring people and ancient plans.",
+      "arc_ids": [
+        "arc_cc8eb96458d0529d8c5f8309d2c1e568",
+        "arc_ece399296b0b5a38bcb067aabc0becf6",
+        "arc_17da9b1944b5551d8b7e1c89ad6fdae2",
+        "arc_7f4432a2671c5864b2acde472abba66f",
+        "arc_15ad81566e8a536e912e92c0c29b9c7f"
+      ],
+      "episode_ids": [
+        "episode_c888f725b93550419e0296f420cfcaf9",
+        "episode_96f0ae04340e54cdb66170bd0f371cf1",
+        "episode_79922b85b01850ae9a75883fb3ec6f2b",
+        "episode_7f65057e9b9c510f95af72e6b16cbda1",
+        "episode_c81b8f6b9373561596baaf336166f30f",
+        "episode_128b68ae5a295298a721600d0ad78f5e",
+        "episode_3e93d2a8b4555fb8b96823267878692c",
+        "episode_194ff676b3e757bd872c4a7c11cdc09d",
+        "episode_e08a56ddf69d58e087b612fe5dd06578",
+        "episode_610982173e8558de830ad01606ba570a",
+        "episode_76ff3369a8575e2fb17551461a588018",
+        "episode_f4e1d61818865bd2ad383c9792c0efd7",
+        "episode_8a443d7bf6aa5fb4aed1545e17037984",
+        "episode_d2ddb899304857529a1b4dbb8ace5f14",
+        "episode_9b52c08007f55f3f87132b385ee48d11",
+        "episode_f3e5584084ba5c8b88a6d7648f380415",
+        "episode_bbdff44ca63e5c98ac8b70f5be5842b9",
+        "episode_c31b2882521f5fe2861ce0f918cda0a5",
+        "episode_bdc3b55fe18559c49ac6472d73d0720a",
+        "episode_915457f658a658d3956aed1026327a13",
+        "episode_2201425bc49251ad9363c01c84bae1d7",
+        "episode_c50e02dba0f65f5787c756d07b87d8c0",
+        "episode_9cca0a6f45ce5e09be88440f0289c38d",
+        "episode_81a4d5128ff35eba99a4b1e3afb7e18a",
+        "episode_20031cd19d925cd5be8726ceea195da4"
+      ],
+      "source_ids": [
+        "source_7c301c90e4da58308d9076101865fdef",
+        "source_97b600eed255518f8fc7e639888e9431",
+        "source_b978abdffacc5692a82e659389b31655",
+        "source_76f6941ce0b0511693cfae226ce97ee4",
+        "source_b3bdcb0759ad5ccb98786a98190c1727"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Return to Ravnica through the formation of the Gatewatch"
+      ],
+      "original_fields": {
+        "name": "**Bolas moves his pieces**",
+        "position": "Return to Ravnica through the formation of the Gatewatch",
+        "conflicts": "Guild crisis; divine betrayal; changed Tarkir; renewed Eldrazi war",
+        "planes": "Ravnica, Theros, Tarkir, Zendikar",
+        "characters": "Jace, Ajani, Elspeth, Sarkhan, Ugin, Gideon, Nissa, Chandra",
+        "why_it_matters": "Builds the team and reveals that separate plane crises are connected through recurring people and ancient plans."
+      }
+    },
+    {
+      "era_id": "era_cd47714a7661551f85f56c000e02d199",
+      "name": "The Gatewatch and Bolas endgame",
+      "watch_order": 11,
+      "chronological_position": "Kaladesh through War of the Spark",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Planar Bridge theft; Amonkhet army; Immortal Sun trap; Ravnican invasion",
+      "important_planes_text": "Kaladesh, Amonkhet, Ixalan, Dominaria, Ravnica",
+      "important_characters_text": "Gatewatch, Bolas, Tezzeret, Vraska, Teferi, Liliana, Ugin",
+      "plane_ids": [
+        "plane_6f795e7906835366933a91dd91f65c48",
+        "plane_d07105c681e753348b74556e0c55e6cb",
+        "plane_437776e0e8bd54748644c435fba2287c",
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_feb874e037ea5c37b90de41870f37ea8"
+      ],
+      "character_ids": [
+        "character_0ea5865b84c8593a975e7118d069df82",
+        "character_e8ddb23b87875bdaafb2895fa8eb401e",
+        "character_596db45fa5de564cb75122a4b4fabdb6",
+        "character_10f149c2195457cf88d1a40f0bddc839",
+        "character_6fee6454cc7b51e4b1bcda17dc1c6342",
+        "character_df36844eb70c5f239467d2672a5da47c",
+        "character_e07da21f29d059a2ae5f75b71fa103d4",
+        "character_6324b6a78c9a5c8285db1e8a183f9542",
+        "character_a3b67120a10250b3b824281effed83ef",
+        "character_70e1d5e5402053209f1ef7e6bfa5e8b0",
+        "character_b0b8d125b1cb5e33980dacc75a627275",
+        "character_91eac32f3d1d55029a910e20765e3f94",
+        "character_cf55cd3053fe5d7589c9d636dcc821c2",
+        "character_a3d1c78639055ad79c25897c01d51573",
+        "character_28e1dfafed5a5ffa9129c928c287882f",
+        "character_8994babe35ca557e9cbe06775262e6b9",
+        "character_078076016c3e5caa9d315258de6d990d",
+        "character_05c522d2c4af57d592b47096ba77bdf8",
+        "character_49a6a650bed757199e60acd1d6692ef9",
+        "character_b8a067210be4524e8ab2c51f3d4bd806",
+        "character_97fc63efc6b353faaa6e8cbc73d5e439",
+        "character_73268e90331c56a185ed99e0a97cee37",
+        "character_4e8c2a4386885a99bb7c5164c4bd7abe",
+        "character_b2b15886f0595a2fb77ae7b4e7722f55",
+        "character_0efaf22274f75e35b213b04b38a1c490",
+        "character_ca991377f9015b788513fb01f8e2ed9c"
+      ],
+      "why_it_matters": "Pays off Bolas’s post-Mending plan while breaking and remaking the heroic coalition.",
+      "arc_ids": [
+        "arc_e325b183b969572096cabd79f44c9fc7",
+        "arc_3463478ecb675a2ca5b04e080d799548",
+        "arc_45cd9a5f290c50a6883045d37e713afb",
+        "arc_4c655dc8cb435b70a40f23d019d5abd8",
+        "arc_1b8e7093ea35509abba7943b5348a71c",
+        "arc_af82235aac1c5f06be10d8ffb8992ec6",
+        "arc_f20959d4b4d05aa9abe40563df303270"
+      ],
+      "episode_ids": [
+        "episode_b9024ae59811531c977fe239565e933b",
+        "episode_40883d6a65be5d818a8f309b84f644d0",
+        "episode_f96c5ee488355202ac17110b7853a919",
+        "episode_a645e78607de562f89eef929da353737",
+        "episode_fc6773056c3253769244d0983c63eae0",
+        "episode_f0fecf8a457c5661a7cbc3a7de2b1ff6",
+        "episode_171700fc86915b218e3d83d81ec9a042",
+        "episode_a20461c29e28516685ef10746d1af7e8",
+        "episode_5c42de98e3b15a838ccf8f46477e89fd",
+        "episode_9606be614eae595cbf9826647d67fa7f",
+        "episode_57794f03d1915c5fbf7fcc5d18f9ede8",
+        "episode_e29020f91ae9553c97a423ced4549f30",
+        "episode_ea25bd6334da515daee6880157218f50",
+        "episode_69643783ec825ffbb0ccaf557e482f68",
+        "episode_55d6fc09bf465e69b57fa62f4ce8a4d1",
+        "episode_fc2b6e0731735efc9968e5e6bb48052c",
+        "episode_a4d88eefa3f35f499e97bc51a2a41649",
+        "episode_15eb2b84a6e45cbf80f4fd25a60fcf51",
+        "episode_e953f6bc2e2a59bb9b7d9db3b2ddd19e",
+        "episode_7d04d1bbfe7353e8b0a8560685f5a429",
+        "episode_51779fd1722c51c6b07709e0075fdb9d",
+        "episode_856e0b69641b52489c0aed7824ad0a83",
+        "episode_b377e93bed87509cb448e24a7492cb1a",
+        "episode_9e5cf196d2ac57bebd49785579ed6820",
+        "episode_1846e48750ea5c8ca4645cb81bce4f5d",
+        "episode_d3cd94f0706e5357a6afb09247d50f7a",
+        "episode_8877abffab585f10bed2eae6714de90a",
+        "episode_9cdb47489b13563eb971ee241db32702",
+        "episode_161897441bdc5196ba91f54583df6467",
+        "episode_b9dd54102ee7592d8395910fe722bfe0",
+        "episode_aafb532425bc5d6b9ff7aeb979dbf1e8",
+        "episode_11971075ec9157dfacb19c19c9f09bc3",
+        "episode_74110d84bca956a181e4b4168514495f",
+        "episode_d79d130570f15ab9b60ff06b7afdb95f",
+        "episode_3709b4cb364f503c9ce81ca8b048c992",
+        "episode_75feb428c028526ba72d2ce7839be07f",
+        "episode_fd0fe358ad7054dea4fc4b5bb3420d54"
+      ],
+      "source_ids": [
+        "source_91ae8ee1f13c53be8f117edabbfc74f6",
+        "source_5a30d55f8fbb5b22b57135291ff598bb",
+        "source_272d8ca2eb9958bd9131fbee804f82fc",
+        "source_55a55cc3fe5152609f3a1441e0327c8d",
+        "source_a86ded38f7fe50719debfe439accf427",
+        "source_50de61f0bfc65da3b8badef54131769b",
+        "source_729e6e806ee35adea884702d39292ba6"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Kaladesh through War of the Spark"
+      ],
+      "original_fields": {
+        "name": "**The Gatewatch and Bolas endgame**",
+        "position": "Kaladesh through War of the Spark",
+        "conflicts": "Planar Bridge theft; Amonkhet army; Immortal Sun trap; Ravnican invasion",
+        "planes": "Kaladesh, Amonkhet, Ixalan, Dominaria, Ravnica",
+        "characters": "Gatewatch, Bolas, Tezzeret, Vraska, Teferi, Liliana, Ugin",
+        "why_it_matters": "Pays off Bolas’s post-Mending plan while breaking and remaking the heroic coalition."
+      }
+    },
+    {
+      "era_id": "era_99b61eaa0fa7594699efd815f2307a99",
+      "name": "Road to New Phyrexia",
+      "watch_order": 12,
+      "chronological_position": "After War of the Spark through New Capenna",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Royal crises; monster conflict; praetor incursions; student war; Innistrad night; compleation technology",
+      "important_planes_text": "Eldraine, Ikoria, Zendikar, Kaldheim, Arcavios, Innistrad, Kamigawa, New Capenna",
+      "important_characters_text": "Will, Rowan, Garruk, Lukka, Vivien, Nahiri, Kaya, Kaito, Tamiyo, Elspeth, Urabrask",
+      "plane_ids": [
+        "plane_417b1e84657457a28c9c7afcbaf47ef6",
+        "plane_3e3c185f67675834aed10495b3e391e7",
+        "plane_dfec45bad00c530386db896848e781b5",
+        "plane_ddc4ad1368cd5942b7f349f882f55dac",
+        "plane_19c89c2c1adc5175b254eb71fea85661",
+        "plane_c4ea42639aec558caaf32ec0608af25d",
+        "plane_104c4b60bebe5259acf567666950f536",
+        "plane_76150507eada57139bd27de21a7952e7",
+        "plane_2a574261e67d5600bab7d871b4c35cf2"
+      ],
+      "character_ids": [
+        "character_992d381de6a05edc802438a90eb983f9",
+        "character_a640989e09ff55a98ad5d4394497070c",
+        "character_0248202493f4528cab4b4149c02d565c",
+        "character_43b2723dde3d5b6bbf6b8683bf461afc",
+        "character_8e044e017f5652eeb06c17f8ddae8b46",
+        "character_499e6b89211e5b99a744f3f93e3a1387",
+        "character_c2500793c26c5008b029b89ef6dd55a0",
+        "character_1e0f2c0427c856faa9e5f12206a23bd4",
+        "character_5092da4117c158c8a1ada1baf7eeef8e",
+        "character_d3597a88a6c75e44b0e2deef0639d93d",
+        "character_b6ccdc27ed45541b92b284bb95515ead",
+        "character_ba2b707669805505b7bd27b6a02528b6",
+        "character_38bdd4d605b252f1a02bff7af2218682",
+        "character_f02f5776116e5b8ea678261318b4fd36",
+        "character_58de2ef90bd75d22923785a31beb270c",
+        "character_6aee870094f353e5816683dbf00dc633",
+        "character_b0b8d125b1cb5e33980dacc75a627275",
+        "character_e8ddb23b87875bdaafb2895fa8eb401e",
+        "character_583b85ec7c5159cd82168e36d9fc93fb",
+        "character_b8f9832e8848560eb55b2bd8afa53155",
+        "character_135e59c7c7c3506ba93e16c844f7f79f",
+        "character_1f68e55f876855a19bfafee2bf4a2de8",
+        "character_b2b15886f0595a2fb77ae7b4e7722f55",
+        "character_14ca2a3678a25a4e897f9e04f7bec778",
+        "character_f535c637af565974b9da11c9661498a6",
+        "character_0274ab7b45b152ed83dd90513224f10f",
+        "character_b8a067210be4524e8ab2c51f3d4bd806",
+        "character_76e4443a92f75cd1b85f42a2d81dd5a8",
+        "character_9bf53645a5245441b2f7950ab82ead82",
+        "character_078076016c3e5caa9d315258de6d990d",
+        "character_0ea5865b84c8593a975e7118d069df82",
+        "character_99a72aa1511f5a359d27eff27eb2674d",
+        "character_e4a2ecdce9b854f182afafb809194d7a",
+        "character_9aa36ce23cf4589290308f211fc88dff",
+        "character_3e7caceaa1e35e48b7a3cf30b7b1e9bb",
+        "character_0b68413655db5d4e972f0d6c3e67d0d7",
+        "character_596db45fa5de564cb75122a4b4fabdb6",
+        "character_89fd8a18824a546f9c579e004ffa9a1f",
+        "character_d4af627dd1435ef7a17f02ec8a775508",
+        "character_d3b53894c5a45b009ec5f120ccfe8b4b",
+        "character_d69955030e5d53109397befb86aedc2f",
+        "character_01075814431c5c7f90e4c47cdb413557",
+        "character_5148802b420a5f9c9d59e863a67b412f",
+        "character_26620ca9251553869dc9648da2aa9396"
+      ],
+      "why_it_matters": "Builds a connected invasion plot while allowing each plane’s local story to finish.",
+      "arc_ids": [
+        "arc_37888d412cd05d98b41206b221288265",
+        "arc_426922e8d96559ecb1efd59237f0bb41",
+        "arc_b2d55f8f4c955a48a70a8fa93751ec41",
+        "arc_57e66efd4608577b87037bcd5e30dbf2",
+        "arc_dc4879c93135541bbb7fdbc4e05e4b39",
+        "arc_8775a4e4f3ae533389719538837b543b",
+        "arc_dbdfb5c635d15bc689c506f564c87f21",
+        "arc_09bbc9a7b4bb51d19af4cbb966b0985b",
+        "arc_fe1b695bab8357a3b232900f10df2374"
+      ],
+      "episode_ids": [
+        "episode_2967771f02a55f638e9aea5c0d5f5d67",
+        "episode_99c9df32208e563fa6881d1f6abaf41f",
+        "episode_2db89f546b0b5a23818733b6b3d894fe",
+        "episode_5f1bb8e3a6e55154aa051a5291e4fefb",
+        "episode_17091311230657acb83a505eda9a6371",
+        "episode_c8e9ba3799e95c449fa2e54bfec972cc",
+        "episode_64c6ca41f9925729800cb16d4c3f6132",
+        "episode_8e932b89aac759e3b0f7cd7b64242e52",
+        "episode_0ce5cb915cf3535e91f30665bac442ab",
+        "episode_4e39f1071b855f08971ab7e1335f6162",
+        "episode_779d14e10a7356edbbefa20a913dd906",
+        "episode_5cae00ce22cb554da3ee12c1b09b8554",
+        "episode_ec582ebedd705fb6990cf94d38b19143",
+        "episode_47ccb3beb24a5c179789fde3bc9fb95e",
+        "episode_379cd75644d355a39a48c30d3aaff910",
+        "episode_5f600230a89b5d96aab1287652f9d518",
+        "episode_39e2dfd4532158f2b4526094b80dfe06",
+        "episode_420b69ea3cf5555d91d3e30bc027bee9",
+        "episode_dff5122529d7514dbc17c93c493c6420",
+        "episode_0122aead72a35b7a89b8bf2649e58197",
+        "episode_e02970294e0155b5a22e5fbf26536229",
+        "episode_996a53929886539e90db8624f37079e0",
+        "episode_3e04f679f79e5f55b62cdf268e24458f",
+        "episode_be2f167ebeff584887bdc809ed5807e6",
+        "episode_fbfbfc5ccda755109dac940d769a09e8",
+        "episode_813dabc1c38e55ccb17bd5e86e3860b9",
+        "episode_504a649a24255b6188d82ef101bebf51",
+        "episode_4fcd69cc11345a21868c400d9d8c444f",
+        "episode_546eda9622b05a3fb772f15b45232ae5",
+        "episode_07038243f62d5e7bb17cab8e6398ee91",
+        "episode_851f2a8edec752818a6e7fadfbf8d326",
+        "episode_d2ee37513b185b838d51deccc22dc212",
+        "episode_4f0c87af2bb15d2eb4935a759e660dae",
+        "episode_cb412b46234b5bb395c509bdb77753b0",
+        "episode_5ccd974f16d952a78005df8fda6d9fa5",
+        "episode_6e03c1fe0bac528785e4ea8eefbcd01e",
+        "episode_e68f2ade2ada5f9490a83ec7181dd0d7"
+      ],
+      "source_ids": [
+        "source_97347fd4341b5e9daf0edfa9efc1aa65",
+        "source_47b449551f715c3baa519cbf9107584d",
+        "source_4bae4562eea85e3dac8fe3af592574de",
+        "source_3109ff96645a59899722c266beede9d1",
+        "source_fe9545ba616b5b1e9704288d27f1ba3a",
+        "source_3002a2be884f5aaea4a663898c5743cc",
+        "source_15f5acb4369a59efbac465220069caf5",
+        "source_22ba00960ae055c3a8eeabad7951597d",
+        "source_960c05fa35c057a8a32ae034417e638c"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "After War of the Spark through New Capenna"
+      ],
+      "original_fields": {
+        "name": "**Road to New Phyrexia**",
+        "position": "After War of the Spark through New Capenna",
+        "conflicts": "Royal crises; monster conflict; praetor incursions; student war; Innistrad night; compleation technology",
+        "planes": "Eldraine, Ikoria, Zendikar, Kaldheim, Arcavios, Innistrad, Kamigawa, New Capenna",
+        "characters": "Will, Rowan, Garruk, Lukka, Vivien, Nahiri, Kaya, Kaito, Tamiyo, Elspeth, Urabrask",
+        "why_it_matters": "Builds a connected invasion plot while allowing each plane’s local story to finish."
+      }
+    },
+    {
+      "era_id": "era_90b7e6e2fc9b5eb0bbb41e2c94addf1b",
+      "name": "The Multiversal Phyrexian invasion",
+      "watch_order": 13,
+      "chronological_position": "Dominaria United through March of the Machine Aftermath",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Sleeper war; time mission; failed strike; Realmbreaker invasion; mass compleation and desparking",
+      "important_planes_text": "Dominaria, New Phyrexia, Zhalfir, many planes",
+      "important_characters_text": "Karn, Teferi, Jace, Elspeth, Koth, Wrenn, Chandra, Nissa, Ajani, Elesh Norn",
+      "plane_ids": [
+        "plane_555508df6812529fbea50a0f65ab7a3d",
+        "plane_4fb548ff82d2514486affd649d0cb2eb"
+      ],
+      "character_ids": [
+        "character_5773dc213cc9571cb51d580872521ae8",
+        "character_8994babe35ca557e9cbe06775262e6b9",
+        "character_078076016c3e5caa9d315258de6d990d",
+        "character_05c522d2c4af57d592b47096ba77bdf8",
+        "character_3e7f566e0274535bb8dafbedb3626757",
+        "character_2cff73fcb0af51a1a394903ad31be3d5",
+        "character_5a888358891f5536807d10c4fef03211",
+        "character_a79c24b23618577eb57af307a8ef5fd0",
+        "character_49ff3e1716eb50f3b54bf40dea9c54dd",
+        "character_10f149c2195457cf88d1a40f0bddc839",
+        "character_b0b8d125b1cb5e33980dacc75a627275",
+        "character_e8ddb23b87875bdaafb2895fa8eb401e",
+        "character_499e6b89211e5b99a744f3f93e3a1387",
+        "character_583b85ec7c5159cd82168e36d9fc93fb",
+        "character_214e8849b04c58e8be5082f998f260d2",
+        "character_91eac32f3d1d55029a910e20765e3f94",
+        "character_b2b15886f0595a2fb77ae7b4e7722f55",
+        "character_38bdd4d605b252f1a02bff7af2218682",
+        "character_d3b53894c5a45b009ec5f120ccfe8b4b",
+        "character_0ea5865b84c8593a975e7118d069df82",
+        "character_1fc910f91eaa513b9a3c48819498ab32",
+        "character_9aa36ce23cf4589290308f211fc88dff",
+        "character_d751a4970c6452c38733f528cfb30343"
+      ],
+      "why_it_matters": "Ends the old travel order and turns Omenpaths into the foundation of the next age.",
+      "arc_ids": [
+        "arc_e41822f908425a759787f6f9d03f3971",
+        "arc_c2a2d4649eeb53d698fb9d442f907cbd",
+        "arc_b444521fe6f5568ca61fa6f68585a755",
+        "arc_57e892ec6975569c94a0d07a20f44d6a",
+        "arc_4f6fea4c3b375f9fa6fddf23517ad039"
+      ],
+      "episode_ids": [
+        "episode_0748cdb77a655c538a48f12c82c56a6b",
+        "episode_454cf916094d598794552d3eb7ce2ecf",
+        "episode_1a98c3961b6f58fc8ac14f17835d55da",
+        "episode_42291875760559f7b6d03ea41dc969d1",
+        "episode_5864c73ee3b75df1a8a966dd02af025d",
+        "episode_d9ee03f4934858e88990200dae59ac6e",
+        "episode_48dd997ae50957f2954220a8b13c1ee7",
+        "episode_81299afef64451ab89a6ba9599c5c057",
+        "episode_747c400a8e6e5e50b99ae9877774dc7e",
+        "episode_1567ec925d345b39b24fa0d68b8e2157",
+        "episode_b80d345ce2bc5d968cef2c4c8908196f",
+        "episode_cd96f8cfc1c65a88aa58f1d00c23e623",
+        "episode_d08b7059b91b5450aaa8871ac7267022",
+        "episode_670ee0fe1cb35112a4ef02ced1ae3110",
+        "episode_c5218c029d3c5600a4432ab5d9015247",
+        "episode_8a59dcda700c572c97c5d55dddefd073",
+        "episode_793177901d525be692bae0e43521a175",
+        "episode_b6696cb01e6b5f81b1003638da2b32fe",
+        "episode_01a7fff4bc8b52a59b5f775e982de31d",
+        "episode_a932a19b9ff157279664adb5dc5e9ee2",
+        "episode_7a42041f7eec5b1094eb613094c20dd5",
+        "episode_df34dfeaa1d959469396e2fb449f4096",
+        "episode_f71a6d96533a5bc1929ee64da243599e",
+        "episode_142b46a4199e55bfab3697ca3b92a349",
+        "episode_028b52ca51465a07bc499975c440d5f9",
+        "episode_4ffc970df89f5cb786ee2b25d4176051"
+      ],
+      "source_ids": [
+        "source_c42f1fb81b1f5bf59562bdf9bcd8d1e6",
+        "source_43dea95982a456bfb3022312427f3a3c",
+        "source_b8192205396f5763a8201ce692791170",
+        "source_3365c7d421775940a1f4d2a6dc113026",
+        "source_6fb0885a0f51583b9b489cd1e6af7906",
+        "source_561fccb4de62552fb8d140df664063ec"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Dominaria United through March of the Machine Aftermath"
+      ],
+      "original_fields": {
+        "name": "**The Multiversal Phyrexian invasion**",
+        "position": "Dominaria United through March of the Machine Aftermath",
+        "conflicts": "Sleeper war; time mission; failed strike; Realmbreaker invasion; mass compleation and desparking",
+        "planes": "Dominaria, New Phyrexia, Zhalfir, many planes",
+        "characters": "Karn, Teferi, Jace, Elspeth, Koth, Wrenn, Chandra, Nissa, Ajani, Elesh Norn",
+        "why_it_matters": "Ends the old travel order and turns Omenpaths into the foundation of the next age."
+      }
+    },
+    {
+      "era_id": "era_645a4db1dc2355218d7c5916d2c191b8",
+      "name": "The Omenpath frontier",
+      "watch_order": 14,
+      "chronological_position": "Post-invasion through Duskmourn",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Succession; migration; buried histories; murder; heist; localized calamity; Valgavoth",
+      "important_planes_text": "Eldraine, Ixalan, Ravnica, Thunder Junction, Bloomburrow, Duskmourn",
+      "important_characters_text": "Kellan, Rowan, Will, Quintorius, Huatli, Saheeli, Kaya, Oko, Jace, Vraska, Loot, Nashi",
+      "plane_ids": [
+        "plane_417b1e84657457a28c9c7afcbaf47ef6",
+        "plane_437776e0e8bd54748644c435fba2287c",
+        "plane_feb874e037ea5c37b90de41870f37ea8",
+        "plane_cfbf5495789757b4879b38f82ac43538",
+        "plane_00aeb1bf637e511094f69418841fe1c5",
+        "plane_e2a97b23cbf85ca680e03b7dddaf807d"
+      ],
+      "character_ids": [
+        "character_1e0f2c0427c856faa9e5f12206a23bd4",
+        "character_a640989e09ff55a98ad5d4394497070c",
+        "character_0248202493f4528cab4b4149c02d565c",
+        "character_bd0b0409242054878f389b323ddfd223",
+        "character_04a5c1c7e91357a18321cca5c8735170",
+        "character_10f149c2195457cf88d1a40f0bddc839",
+        "character_cf55cd3053fe5d7589c9d636dcc821c2",
+        "character_76e4443a92f75cd1b85f42a2d81dd5a8",
+        "character_30f493ef35035fd090a4e69b8ca08e69",
+        "character_5d772ae3aa65583c90badd8a80a1f480",
+        "character_b2b15886f0595a2fb77ae7b4e7722f55",
+        "character_f09d24dbbeb75e4ba0e83fd32129a616",
+        "character_230c7cf1ba3a5e5a928b6bbf0da04460",
+        "character_8048ce68bdaa5cf482f5ef10a69a0bb8",
+        "character_431ca6ba9dec58a1a13d32895c814ea9",
+        "character_b0b8d125b1cb5e33980dacc75a627275",
+        "character_91eac32f3d1d55029a910e20765e3f94",
+        "character_43b2723dde3d5b6bbf6b8683bf461afc",
+        "character_30e2a453cde353ccb533a98a17ae716a",
+        "character_de659419c63b5dbfa8b4fdd67394cbaf",
+        "character_c043ac4e45bb53ada22af443d331ebb7",
+        "character_4e8c2a4386885a99bb7c5164c4bd7abe",
+        "character_88c3f86d90705c88be6a87089becd1ab",
+        "character_9e1b7bed8eab547a98af2d4514732241",
+        "character_f21fec40c7ba59c3a52a5abf9cd0aa5b",
+        "character_f535c637af565974b9da11c9661498a6",
+        "character_d3b53894c5a45b009ec5f120ccfe8b4b",
+        "character_da4f1ddf611359c692f1016baf1db669",
+        "character_0d3ce4ea79545e7d8de86e9db83de5d9",
+        "character_c0a608e05842552b9b751ad95e1a0bac",
+        "character_2d6781ec56ea5ffbb7ad4b684b3dee33"
+      ],
+      "why_it_matters": "Tests the new travel rules through one continuous Kellan quest, then follows the metaplot it uncovers.",
+      "arc_ids": [
+        "arc_22bbaebf78ac519bb3c8fe48887f05fd",
+        "arc_de529ca1e7a35b9b8b41a3597eb35dd1",
+        "arc_dad09871bb0c51dcacc29a941e025865",
+        "arc_e966d4a811b55c39987ede13997c102b",
+        "arc_10ee5aa601015fb5ab33f81a6a824e93",
+        "arc_988f9c1b0b865144a27a5cfbd0251359"
+      ],
+      "episode_ids": [
+        "episode_5edbfe716b005f08a9768a023d3b966e",
+        "episode_9fb39c37b36a54d69d8ecc80d6323b0f",
+        "episode_2528fbfe4a4151e483f799334d09162a",
+        "episode_eba4c920a7075b97918f9be5c3effa1b",
+        "episode_2e61c5e95b47574cb92bc45689eb3c7d",
+        "episode_8ba5c72722df571092bd8c780a537371",
+        "episode_e14ffaf969125e0ea43b40b5525922be",
+        "episode_29fa225ddaef56a1b67ca50d3cca7d72",
+        "episode_162ffd8b468257ec9f0891179f8e9333",
+        "episode_3f2d009e80df5ad7801f0febd6f36088",
+        "episode_7002801aeb6b58ad8016ae501a884a4b",
+        "episode_edb00f6111245baa8b8dc7d2b57570b5",
+        "episode_d7092652a2cc563ba242d7c383bf6e96",
+        "episode_b814b39d62415bfa9a58a8fcd9ec32c1",
+        "episode_7c07e25ae05b55f9b5d04ead2ba01738",
+        "episode_95f1bee61a26594ab1603f3ca66dd278",
+        "episode_879a365690d6542faab6b7eee73c58c8",
+        "episode_abbfd551af9a5162a8784a9d60b09f80",
+        "episode_589ca0d5555158e9af8a82cc58b90bed",
+        "episode_d5d8568330f553a090fe9e933caa63e8",
+        "episode_107890bec4b45fbd9c743b7e1735c6c4",
+        "episode_e8317aad1b705bf680541af55484dd9a",
+        "episode_3cafbb30b880500381aee46927a35a67",
+        "episode_4b69c4052dab5c9985150194c22e4a59",
+        "episode_bbfcb5cb928550f39535c736df573743",
+        "episode_ae4f70c864c45353a96b6eb739ae1ec7",
+        "episode_551ac990555a5515b7506f6d4e82b7fb",
+        "episode_17947bc87d79580f9b17a5087dab9a44"
+      ],
+      "source_ids": [
+        "source_148db80280985dee9998f0a57ee95fcd",
+        "source_2d2dbff6d49152a3b7ac9c47243ab5af",
+        "source_2ee4939b33945b37a639f2d61665d7c6",
+        "source_fd76eec839c45f39b94a43c0c543e89a",
+        "source_cc58a209f2ea5e21a79af46dfa9c3af9",
+        "source_f20c961abe715a7cb262282d46e49a7b"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Post-invasion through Duskmourn"
+      ],
+      "original_fields": {
+        "name": "**The Omenpath frontier**",
+        "position": "Post-invasion through Duskmourn",
+        "conflicts": "Succession; migration; buried histories; murder; heist; localized calamity; Valgavoth",
+        "planes": "Eldraine, Ixalan, Ravnica, Thunder Junction, Bloomburrow, Duskmourn",
+        "characters": "Kellan, Rowan, Will, Quintorius, Huatli, Saheeli, Kaya, Oko, Jace, Vraska, Loot, Nashi",
+        "why_it_matters": "Tests the new travel rules through one continuous Kellan quest, then follows the metaplot it uncovers."
+      }
+    },
+    {
+      "era_id": "era_cd1502470e025c27b1c1bab014b682bc",
+      "name": "Dragonstorms and the Edge",
+      "watch_order": 15,
+      "chronological_position": "Aetherdrift through Edge of Eternities, 2025 continuity",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Interplanar race; Tarkir dragonstorm crisis; instability beyond familiar planes",
+      "important_planes_text": "Avishkar and race planes, Tarkir, the Edge",
+      "important_characters_text": "Chandra, Nissa, Loot-linked factions, Sarkhan, Ugin, Tezzeret, Edge protagonists",
+      "plane_ids": [
+        "plane_6f795e7906835366933a91dd91f65c48",
+        "plane_2f1be336dbce51e292ecc64196692c8c",
+        "plane_b619c69377305b14961d91e19a5c61d9"
+      ],
+      "character_ids": [
+        "character_0ea5865b84c8593a975e7118d069df82",
+        "character_e8ddb23b87875bdaafb2895fa8eb401e",
+        "character_ca991377f9015b788513fb01f8e2ed9c",
+        "character_499e6b89211e5b99a744f3f93e3a1387",
+        "character_d2e2c97d9f4855bea787d79ef1510dd0",
+        "character_ba2b707669805505b7bd27b6a02528b6",
+        "character_596db45fa5de564cb75122a4b4fabdb6",
+        "character_0c2b114402fa5b33aa58c26e9e5c0d7a",
+        "character_f1ccce0bfcc75c7c8fe40446256c892f"
+      ],
+      "why_it_matters": "Turns the new travel system into a connected crisis and broadens what the Multiverse can contain.",
+      "arc_ids": [
+        "arc_def5ee86ae0b5dbe9da34bfda8c5c1a6",
+        "arc_01c0699174355622a818aefe5d047fbb",
+        "arc_b08cb9c620cf587f91914b6b1107311e"
+      ],
+      "episode_ids": [
+        "episode_8b7a85978823503fbf4db99fae8de7e4",
+        "episode_21a7f863c1765e6ebd7406d220621ba7",
+        "episode_11911af4e906579ebf8df2295cfc3ed9",
+        "episode_8c65b74feab55d05b063bfca0ca9be92",
+        "episode_aa87024f6b1451008cea6628fd43dfb4",
+        "episode_96e189bcb820503ea99b987c74bed160",
+        "episode_1f739cf973485b72bb9035b72218273e",
+        "episode_18744bd248fd55178de1e9fc4942e6c4",
+        "episode_bad2ce9403675fd1b3e3acb739107532",
+        "episode_410ba6ea99be5338837e13ecc5aa434f"
+      ],
+      "source_ids": [
+        "source_d6d906f62bef56b9a9a9ab8c3ca685d6",
+        "source_53036fb6b20d5128be7b96847dea07e7",
+        "source_08f8a8a1a25659e4a3f61e7c5def45a4"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Aetherdrift through Edge of Eternities, 2025 continuity"
+      ],
+      "original_fields": {
+        "name": "**Dragonstorms and the Edge**",
+        "position": "Aetherdrift through Edge of Eternities, 2025 continuity",
+        "conflicts": "Interplanar race; Tarkir dragonstorm crisis; instability beyond familiar planes",
+        "planes": "Avishkar and race planes, Tarkir, the Edge",
+        "characters": "Chandra, Nissa, Loot-linked factions, Sarkhan, Ugin, Tezzeret, Edge protagonists",
+        "why_it_matters": "Turns the new travel system into a connected crisis and broadens what the Multiverse can contain."
+      }
+    },
+    {
+      "era_id": "era_9945737e9b5b595495f4029727ce8e74",
+      "name": "Eclipsed worlds and fractured reality",
+      "watch_order": 16,
+      "chronological_position": "Late 2025 through September 2026 published story",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Lorwyn duality; Arcavios secrets; Jace’s Echoverse overlay",
+      "important_planes_text": "Lorwyn–Shadowmoor, Arcavios, Echoverse, many planes",
+      "important_characters_text": "Dina and students, Jadzi, Tam, Jace, Vraska, Ajani, Chandra, Garruk, Liliana, Emrakul",
+      "plane_ids": [
+        "plane_6eda8aa097f155c09b13c6b4d68dc8bc",
+        "plane_c4ea42639aec558caaf32ec0608af25d",
+        "plane_f9d6b84e7fa85e5e8037e8b02be53be3"
+      ],
+      "character_ids": [
+        "character_56cd81db869e559680d3deb012838437",
+        "character_dfce334d8aca5241acd78a42b4d2e170",
+        "character_ea5940cebdd95c68ba8516e8dfbdcc2d",
+        "character_a233bd838e4a52d295f93ec56b7e7613",
+        "character_3e7f566e0274535bb8dafbedb3626757",
+        "character_b0a9f1c84eb35eaa836d4d45111f4d4b",
+        "character_feb1f53536375a038e0bd9f5ab40f001",
+        "character_b0b8d125b1cb5e33980dacc75a627275",
+        "character_b8a067210be4524e8ab2c51f3d4bd806",
+        "character_0ea5865b84c8593a975e7118d069df82",
+        "character_bd550e94d3cb5815b5ade5e124f9c49a",
+        "character_992d381de6a05edc802438a90eb983f9",
+        "character_91eac32f3d1d55029a910e20765e3f94"
+      ],
+      "why_it_matters": "Current endpoint: identity, duplication, and the architecture of reality become the conflict.",
+      "arc_ids": [
+        "arc_8373651615275999b88ee26a44bfcd74",
+        "arc_8883508c2a9959e9939c43faa8973c1d",
+        "arc_6a38d47a2e045473b969f72b41dd82ef"
+      ],
+      "episode_ids": [
+        "episode_5f9e80476dd95e52a2896d2144fb08b9",
+        "episode_f7800ef586af5936aff9cf01404d1c4c",
+        "episode_7c18e4d9f1ab513ca877faab6ed38934",
+        "episode_d6b2cc75d0145a07a79429e1b1be3dfd",
+        "episode_1c5b12bb473f55b791d5542ec17ada5e",
+        "episode_8fd06017af8c5c679a2910a2a9bf8f11",
+        "episode_89034726cd5850cea3ae37e20be69583",
+        "episode_d6136819f3105a37acb502525196a18b",
+        "episode_fa52f9466a7b5bf3af6125c0d41ae581",
+        "episode_b5e4cd86db2854ee9f29cb09570d4d21",
+        "episode_78602975dd465705969028009519d3bf",
+        "episode_900d96a69b355cc28e2faa8c8a838e62",
+        "episode_b87731bb29e450749781888bc609d9a8",
+        "episode_62acb68f33f555b19342ef1f44133e46",
+        "episode_17ddf89567ac5249a9c08ecb50eec1a4",
+        "episode_543571f47c525c12afe349def6e3b754",
+        "episode_0d02618ca9625e2690f8cc031501932f"
+      ],
+      "source_ids": [
+        "source_0e036cb0d9cd50e0bcacaf8b61922e5a",
+        "source_9654780466075b1d959be1aadc9dabc7",
+        "source_3d52415d4b735daeb6a18b5197f42cd1",
+        "source_b813b119b1d2581dbd754eece364c36a",
+        "source_adc009878a75558b9fbaefd56e78c85a"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Late 2025 through September 2026 published story"
+      ],
+      "original_fields": {
+        "name": "**Eclipsed worlds and fractured reality**",
+        "position": "Late 2025 through September 2026 published story",
+        "conflicts": "Lorwyn duality; Arcavios secrets; Jace’s Echoverse overlay",
+        "planes": "Lorwyn–Shadowmoor, Arcavios, Echoverse, many planes",
+        "characters": "Dina and students, Jadzi, Tam, Jace, Vraska, Ajani, Chandra, Garruk, Liliana, Emrakul",
+        "why_it_matters": "Current endpoint: identity, duplication, and the architecture of reality become the conflict."
+      }
+    },
+    {
+      "era_id": "era_769795956aba556eb0f6f461881919d8",
+      "name": "Optional plane chronicles and disputed branches",
+      "watch_order": 17,
+      "chronological_position": "Inserted only at marked context points; dates vary",
+      "date_start_ar": null,
+      "date_end_ar": null,
+      "major_conflicts_text": "Self-contained histories and canon-boundary material",
+      "important_planes_text": "Ulgrotha, Fiora, Kylem, Rabiah and other supplemental settings",
+      "important_characters_text": "Baron Sengir, Marchesa, Kaya, Will, Rowan and anthology casts",
+      "plane_ids": [
+        "plane_1984046145f951be8bebb60afe640e43"
+      ],
+      "character_ids": [
+        "character_b2b15886f0595a2fb77ae7b4e7722f55",
+        "character_e3f6f8771eb0544eae5a0b3a9cdd3382",
+        "character_1974c50cd3305933885cf0ecff4c0af7",
+        "character_ba28484018eb5a8f8f4c5582ec7476dd",
+        "character_08507443af3e555d944691539ea97bf4"
+      ],
+      "why_it_matters": "The remaining Fiora chronicle supplies assassination and succession history; setting-only Kylem/Rabiah material stays in research notes.",
+      "arc_ids": [
+        "arc_b3dc54ab6763569c89c30bce324633f0"
+      ],
+      "episode_ids": [
+        "episode_9c6c91d5992d517e8f99a2a53283f8f3",
+        "episode_7a284e7512e95dafaa9532467c41b586",
+        "episode_faba765a82865c52a3c705ee161950a5"
+      ],
+      "source_ids": [
+        "source_dfb3e5824a7d551abd09136322706a83",
+        "source_8f25215fb4e457e7b958b031ce489d0b",
+        "source_b8ddcb4202bd5bd7a2270604a9be403e"
+      ],
+      "uncertainty_notes": [
+        "Era is an editorial grouping, not a universally synchronized date range.",
+        "Inserted only at marked context points; dates vary"
+      ],
+      "original_fields": {
+        "name": "**Optional plane chronicles and disputed branches**",
+        "position": "Inserted only at marked context points; dates vary",
+        "conflicts": "Self-contained histories and canon-boundary material",
+        "planes": "Ulgrotha, Fiora, Kylem, Rabiah and other supplemental settings",
+        "characters": "Baron Sengir, Marchesa, Kaya, Will, Rowan and anthology casts",
+        "why_it_matters": "Expands toward hundreds of episodes without interrupting active cause-and-effect arcs."
+      }
+    }
+  ],
+  "revision": "story-first-2026-09-13",
+  "editorial_rule": "Every active episode must be a character-anchored historical action, conflict, discovery, or consequence. Terminology is embedded briefly when needed.",
+  "retired_record_policy": "Retired episode and arc records preserve IDs for migration/audit; applications show only active collections by default."
+}

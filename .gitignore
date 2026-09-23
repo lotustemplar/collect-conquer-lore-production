@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.docx-render/
+episodes/
+thran_chapters.json
+*.epub
+*.zip
+*.bak
+*.bak-*
+*.docx
+.env
+.env.*
+!.env.example

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "statuses": {},
+  "status_order": [
+    "OUTLINE_ONLY",
+    "LORE_PACKET_READY",
+    "NARRATION_READY",
+    "LORE_REVIEW_NEEDED",
+    "LORE_VERIFIED",
+    "SCENES_READY",
+    "VISUALS_ASSIGNED",
+    "PRODUCTION_READY"
+  ]
+}
